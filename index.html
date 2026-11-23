@@ -656,6 +656,93 @@ details summary{cursor:pointer;font-weight:900;margin:8px 0}
 @keyframes chBig{from{box-shadow:0 0 0 0 rgba(255,209,102,.55)}to{box-shadow:0 0 0 12px rgba(255,209,102,0)}}
 @media (max-width:1250px){.cam-help .ch-t{display:none}.cam-help{max-width:calc(100% - 430px);gap:5px;padding:6px 8px}.cam-help .ch-i{font-size:12px;padding:3px 7px}}
 
+/* ===== CLASSROOM GUIDE ===== */
+.brand-t{white-space:nowrap}
+.hub-hero{padding:26px 28px;border-radius:24px;background:linear-gradient(135deg,rgba(62,99,221,.35),rgba(123,79,240,.28));border:1.5px solid rgba(143,220,255,.3);margin-bottom:18px}
+.hub-hero h1{font-size:34px;margin:4px 0 8px}.hub-hero p{font-size:16.5px;color:var(--text-2);max-width:820px;margin:0 0 14px}
+.hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.hub-tile{display:flex;flex-direction:column;align-items:flex-start;gap:6px;text-align:left;padding:20px;border-radius:20px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);color:#fff;cursor:pointer;font-family:inherit;min-height:138px;transition:transform .15s,border-color .15s,background .15s}
+.hub-tile:hover,.hub-tile:active{transform:translateY(-3px);border-color:var(--gold);background:rgba(255,255,255,.1)}
+.hub-tile .ht-ico{font-size:36px;line-height:1}.hub-tile b{font-size:20px}.hub-tile small{font-size:14px;color:var(--text-2);line-height:1.4}
+.hub-sub{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:18px}.hub-note{font-size:13.5px;color:var(--text-2);margin-left:auto}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;margin-top:14px}
+.proj-card{position:relative;padding:16px;border-radius:18px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);cursor:pointer;transition:transform .15s,border-color .15s;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.proj-card:hover{transform:translateY(-3px);border-color:var(--gold)}.proj-card.done{border-color:rgba(48,164,108,.7)}
+.proj-card .pc-n{font-size:12.5px;font-weight:900;letter-spacing:.08em;color:var(--gold)}.proj-card .pc-ico{font-size:40px;line-height:1.1}.proj-card h3{margin:0;font-size:18px;line-height:1.3}
+.proj-card .pc-foot{display:flex;gap:10px;flex-wrap:wrap;font-size:12.5px;color:var(--text-2);margin-top:auto;padding-top:6px}.pc-done{color:#6ee7a8;font-weight:800}
+.fav-btn{width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);background:rgba(10,18,44,.6);color:rgba(255,255,255,.45);font-size:19px;cursor:pointer;line-height:1;flex:none}
+.fav-btn.on{color:#ffd166;border-color:#ffd166;background:rgba(255,209,102,.15)}.fav-btn.sm{position:absolute;top:10px;right:10px;width:32px;height:32px;font-size:16px}
+.feat-card .fav-btn.sm{position:static;margin-right:4px}
+.ph-btns{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.proj-tabs{margin:4px 0 16px}.proj-tabs button{font-size:15.5px;padding:11px 16px}
+.proj-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.link-row{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}.link-row a{text-decoration:none}
+.train-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:12px}.train-head h2{margin:2px 0 6px;font-size:26px}.train-head p{margin:0;color:var(--text-2);font-size:15.5px;max-width:820px}
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin-top:12px}
+.skill-card{position:relative;padding:14px;border-radius:16px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);cursor:pointer;display:flex;flex-direction:column;gap:5px;align-items:flex-start;min-height:128px;transition:transform .15s,border-color .15s}
+.skill-card:hover{transform:translateY(-2px);border-color:#8fdcff}.skill-card.done{border-color:rgba(48,164,108,.7);background:rgba(48,164,108,.1)}
+.skill-card .sc-n{font-size:12px;font-weight:900;color:var(--gold);letter-spacing:.08em}.skill-card.done .sc-n{color:#6ee7a8}.skill-card .sc-ico{font-size:28px;line-height:1.1}.skill-card b{font-size:15.5px;line-height:1.35}.skill-card small{font-size:12.5px;color:var(--text-2)}.skill-card .chip{margin-top:auto}
+.combo-card{display:flex;gap:16px;align-items:center;padding:18px;border-radius:20px;margin-top:16px;background:linear-gradient(135deg,rgba(62,99,221,.28),rgba(48,164,108,.2));border:1.5px solid rgba(143,220,255,.4)}
+.combo-card.done{border-color:rgba(48,164,108,.8)}.combo-card .cc-ico{font-size:48px}.combo-card .cc-b{flex:1;min-width:0}.combo-card h3{margin:2px 0 4px;font-size:20px}.combo-card p{margin:0 0 8px;color:var(--text-2);font-size:14.5px}
+.make-list{display:flex;flex-direction:column;gap:10px}
+.make-step{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);cursor:pointer}
+.make-step .ms-n{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px;flex:none}
+.make-step b{font-size:17.5px}.make-step p{margin:4px 0 0;color:var(--text-2);font-size:15.5px;line-height:1.5}
+.make-step.done{border-color:rgba(48,164,108,.7);background:rgba(48,164,108,.1)}.make-step.done .ms-n{background:#30a46c;color:#fff}.make-step.done b{opacity:.75}
+.ext-list{margin:8px 0 14px;padding-left:20px;line-height:1.9;font-size:15.5px}
+.sk-modal{display:flex;flex-direction:column;gap:12px}.sk-chips{display:flex;gap:6px;flex-wrap:wrap}
+.sk-sec{padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.05);font-size:15.5px;line-height:1.6}.sk-sec h4{margin:0 0 5px;font-size:15px;color:#8fdcff}.sk-sec.ok h4{color:#6ee7a8}
+.sk-steps{margin:0;padding-left:22px}.sk-steps li{margin:3px 0}.sk-combo{margin-top:8px}
+.chip-btn{cursor:pointer;font-family:inherit;border:1px solid rgba(255,255,255,.18)}.chip-btn:hover{filter:brightness(1.25)}
+.fc-rel{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:6px 0 2px;font-size:13px}.fc-rel i{font-style:normal;color:var(--text-2);margin-right:2px}
+.faq-list{display:flex;flex-direction:column;gap:10px}.faq-item{padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);cursor:pointer}
+.fq-q{font-weight:800;font-size:16.5px;display:flex;gap:10px;align-items:baseline}.fq-q span{color:var(--gold);font-weight:900}.fq-a{display:none;margin-top:8px;color:var(--text-2);font-size:15.5px;line-height:1.6;padding-left:24px}.faq-item.open .fq-a{display:block}
+@media (max-width:1100px){.hub-grid{grid-template-columns:repeat(2,1fr)}.nav-opt{display:none}.topnav .navbtn{padding:7px 9px;font-size:13px}.brand-t{font-size:14px}}
+@media (max-width:820px){.hub-grid{grid-template-columns:1fr 1fr}.hub-hero h1{font-size:26px}.combo-card{flex-direction:column;align-items:flex-start}.train-head{flex-direction:column}}
+
+/* ===== 패드(터치) ===== */
+.blk,.handle,.slotdot,.vk,.vk-toggle{touch-action:none}
+.vk-wrap{position:absolute;left:50%;bottom:54px;transform:translateX(-50%);z-index:32;display:flex;gap:6px;align-items:center;max-width:calc(100% - 24px);pointer-events:none}
+.vk-wrap>*{pointer-events:auto}
+.vk-toggle{flex:none;padding:8px 12px;border-radius:999px;border:1.5px solid rgba(143,220,255,.5);background:rgba(10,18,44,.9);color:#fff;font-weight:800;font-size:13px;font-family:inherit;cursor:pointer}
+.vk-bar{display:flex;gap:5px;overflow-x:auto;padding:6px;border-radius:14px;background:rgba(10,18,44,.9);border:1.5px solid rgba(143,220,255,.35);scrollbar-width:none}
+.vk-bar::-webkit-scrollbar{display:none}.vk-bar.closed{display:none}
+.vk{flex:none;min-width:40px;height:40px;padding:0 9px;border-radius:9px;border:0;border-bottom:3px solid #b9c3d6;background:#fff;color:#1b2440;font-weight:900;font-size:13.5px;font-family:inherit;cursor:pointer}
+.vk.vk-mod{background:#e7ecf6}.vk.on{background:#ffd166;border-bottom-color:#c99a2e}.vk.hit{background:#8fdcff;transform:translateY(2px)}
+@media (pointer:coarse){.btn{min-height:44px}.navbtn{min-height:40px}.handle{width:46px;height:46px}.mdot,.mdot2{min-width:30px;min-height:30px}.ctx-menu button,.ed-ctx button{min-height:42px}}
+
+/* ===== 창 두 개로 쓰기 · 실제 제작 안내 ===== */
+.side-bar{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 14px}
+.step-view{scroll-margin-top:70px}
+.sv-dots{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.sv-dot{width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;font-weight:900;font-size:14px;cursor:pointer;font-family:inherit}
+.sv-dot.done{background:#30a46c;border-color:#30a46c}.sv-dot.cur{border-color:var(--gold);box-shadow:0 0 0 3px rgba(255,209,102,.3)}
+.sv-card{padding:20px 22px;border-radius:22px;background:linear-gradient(135deg,rgba(62,99,221,.26),rgba(123,79,240,.18));border:1.5px solid rgba(143,220,255,.4)}
+.sv-card.done{border-color:rgba(48,164,108,.8)}
+.sv-k{font-size:13px;font-weight:900;letter-spacing:.1em;color:var(--gold)}.sv-card h3{font-size:25px;margin:4px 0 6px;line-height:1.3}.sv-how{font-size:18px;line-height:1.6;margin:0 0 12px}
+.sv-sk h4{margin:6px 0 8px;font-size:15.5px;color:#8fdcff}
+.sv-row{padding:12px 14px;border-radius:14px;background:rgba(10,18,44,.55);margin-bottom:8px}
+.sv-row-h{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:4px}.sv-row-h b{font-size:16.5px}
+.sv-line{font-size:15.5px;line-height:1.6;margin:3px 0}.sv-line i{font-style:normal;font-weight:800;color:#8fdcff;margin-right:8px;white-space:nowrap}.sv-line.warn i{color:#ffd166}
+.sv-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.sv-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.sv-nav .btn-gold{flex:1;min-width:220px}
+.make-step.cur{border-color:var(--gold)}.make-step .ms-n{cursor:pointer}
+/* 좁은 창(화면 절반)에서도 읽기 좋게 */
+@media (max-width:900px){
+  .topnav{overflow-x:auto;gap:4px;scrollbar-width:none}.topnav::-webkit-scrollbar{display:none}.topnav .navbtn{flex:none;white-space:nowrap}.topnav .spacer{display:none}.brand-t{display:none}.star-pill{flex:none}.nick-pill{flex:none}
+  .page-head{flex-direction:column;align-items:flex-start;gap:8px}.page-head h1{font-size:25px}.ph-btns{justify-content:flex-start}
+  .two-col{grid-template-columns:1fr !important;display:grid}.proj-tabs{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.proj-tabs button{flex:none;white-space:nowrap}
+  .hub-hero{padding:18px}.hub-tile{min-height:0;padding:14px}.hub-tile b{font-size:17px}.hub-note{margin-left:0}
+  .sv-card{padding:16px}.sv-card h3{font-size:21px}.sv-how{font-size:16.5px}.skill-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}.proj-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+}
+@media (max-width:900px){.page-body{padding:14px 14px 30px}.learn-grid{grid-template-columns:1fr}}
+@media (max-width:900px){
+  .lesson-head{gap:6px;padding:0 8px}.lesson-head .navbtn{white-space:nowrap;padding:6px 8px;font-size:12.5px;flex:none}.mission-dots{flex:1;min-width:0}.lesson-title b{font-size:15px}
+  .guide{grid-template-columns:150px 1fr 150px;gap:8px;padding:8px 10px;height:168px}.guide-goal h2{font-size:15px}.guide .btn{font-size:12.5px;padding:8px 6px}.gstep{font-size:13.5px}
+  .cam-help{left:8px;right:8px;transform:none;max-width:none;bottom:64px;flex-wrap:wrap;border-radius:14px;justify-content:center;white-space:normal}.cam-help.big{transform:scale(1.04)}.cam-help .ch-i{font-size:11.5px;padding:3px 7px}
+  .vk-wrap{bottom:112px}.now-panel{max-width:calc(100% - 70px)}.hud{max-width:60%;font-size:12.5px}
+}
+
 @media print{ #bgCanvas,.topnav,.pb-nav,.btn,.modal-bg{display:none!important} html,body{overflow:visible;background:#fff;color:#000} .screen{position:static;opacity:1} .screen:not(.active){display:none} .page-body{overflow:visible} .panel,.task-card{background:#fff!important;color:#000;border:1px solid #999} .sc-table td{background:#f3f3f3!important;color:#000!important}}
 </style>
 </head>
@@ -2588,7 +2675,7 @@ class CoBlocks {
       if (best) { target = best; mark.classList.remove('hidden'); mark.style.left = best.x + 'px'; mark.style.top = (best.y - 3) + 'px'; }
     };
     const up = ev => {
-      window.removeEventListener('pointermove', mv); window.removeEventListener('pointerup', up); ghost.remove(); mark.remove(); this.trash.classList.remove('hot');
+      window.removeEventListener('pointermove', mv); window.removeEventListener('pointerup', up); window.removeEventListener('pointercancel', up); ghost.remove(); mark.remove(); this.trash.classList.remove('hot');
       if (target && target.trash) { Sfx.click(); this.ed.emit('cbTrash'); }
       else if (target && target.slot) { const sl = target.slot; sl._owner.slots[sl.dataset.slot] = blocks[0]; Sfx.pop(); this.ed.emit('cbDrop', { type: first.type, into: 'slot' }); }
       else if (target && target.list) { target.list.splice(target.i, 0, ...blocks); Sfx.pop(); this.ed.emit('cbDrop', { type: first.type, into: 'list' }); }
@@ -2597,7 +2684,7 @@ class CoBlocks {
         else { this.scripts.push({ id: 's' + (cbUid++), x: Math.max(4, x), y: Math.max(4, y), blocks }); Sfx.click(); this.ed.emit('cbDrop', { type: first.type, into: 'free' }); if (!D.hat && !D.out) this.ed.flash('이 블록은 아직 어떤 시작 블록(이벤트)에도 붙어 있지 않아서 실행되지 않아요. 이벤트 블록 아래에 붙여 주세요!', 3500); } }
       this.renderWs(); this.changed();
     };
-    window.addEventListener('pointermove', mv); window.addEventListener('pointerup', up); mv(e);
+    window.addEventListener('pointermove', mv); window.addEventListener('pointerup', up); window.addEventListener('pointercancel', up); mv(e);
   }
   changed() { this.ed.emit('cbChange', { scripts: this.scripts }); this.ed.emit('change'); }
 }
@@ -3659,7 +3746,7 @@ const allMissions = () => LEVELS.flatMap(L => L.missions.map(m => ({ L, m })));
 function stars() { const d = Store.get(); return Object.keys(d.missions).length + Object.keys(d.solo).length + Object.values(d.works).filter(w => w.done).length * 3; }
 function titleOf(n = stars()) { let t = TITLES[0]; TITLES.forEach(x => { if (n >= x[0]) t = x; }); return t; }
 function levelProgress(L) { const d = Store.get(); const done = L.missions.filter(m => d.missions[m.id]).length; const w = L.work ? d.works[L.work.id] : null; return { done, total: L.missions.length, pct: done / L.missions.length, all: done === L.missions.length, work: !L.work ? 'none' : w && w.done ? 'done' : w ? 'doing' : 'todo', review: !!(d.lessons[L.id] && d.lessons[L.id].review), full: done === L.missions.length && (!L.work || !!(w && w.done)) }; }
-function levelUnlocked(i) { const d = Store.get(); if (d.unlockAll || i <= 1 || i <= (d.passLv || 0) || (Store.acct && Store.acct.role === 't')) return true; return levelProgress(LEVELS[i - 1]).full || (i === 2 && levelProgress(LEVELS[1]).full); }
+function levelUnlocked(i) { return true; /* 완전 개방형 참고서: 어떤 차시도 잠그지 않는다 */ const d = Store.get(); if (d.unlockAll || i <= 1 || i <= (d.passLv || 0) || (Store.acct && Store.acct.role === 't')) return true; return levelProgress(LEVELS[i - 1]).full || (i === 2 && levelProgress(LEVELS[1]).full); }
 function totalPct() { const d = Store.get(); let a = 0, b = 0; LEVELS.forEach(L => { b += L.missions.length; a += L.missions.filter(m => d.missions[m.id]).length; if (L.work) { b += 3; if (d.works[L.work.id] && d.works[L.work.id].done) a += 3; } }); return a / b; }
 function curLevelIdx() { let i = LEVELS.findIndex((L, k) => k >= 1 && !levelProgress(L).full); i = i < 0 ? LEVELS.length - 1 : i; const p = Store.get().passLv || 0; if (p > i) { const j = LEVELS.findIndex((L, k) => k >= p && !levelProgress(L).all); i = j < 0 ? p : j; } return i; }
 const TAGS = { basic: ['기본', 'tag-basic'], must: ['프로젝트 필수', 'tag-must'], challenge: ['도전', 'tag-challenge'], account: ['계정 확인 필요', 'tag-account'], pro: ['Pro 전용', 'tag-account'] };
@@ -3693,19 +3780,20 @@ const App = {
   cur: null,
   show(id) { $$('.screen').forEach(s => s.classList.toggle('active', s.id === id)); this.cur = id; BG.running = id !== 'lesson'; },
   isT() { return Store.acct && Store.acct.role === 't'; },
-  go() { if (!Store.acct && !this.guest) return this.home(); if (this.isT() && !this.asStudent) return this.teacher(); this.dash(); },
+  go() { if (!Store.acct && !this.guest) return this.home(); if (this.isT() && !this.asStudent) return this.teacher(); this.hub(); },
   topnav() {
     const d = Store.get(), t = titleOf(), a = Store.acct;
     return h('div', { class: 'topnav' },
-      h('div', { class: 'brand', onclick: () => App.go() }, h('div', { class: 'logo' }, '❄'), 'DELIGHTEX MASTER CLASS'),
+      h('div', { class: 'brand', onclick: () => { App.asStudent = true; App.hub(); } }, h('div', { class: 'logo' }, '❄'), h('span', { class: 'brand-t' }, 'DELIGHTEX CLASSROOM GUIDE')),
       h('div', { class: 'spacer' }),
       this.isT() ? h('button', { class: 'navbtn', onclick: () => { App.asStudent = false; App.teacher(); } }, '👩‍🏫 학급 관리') : null,
-      h('button', { class: 'navbtn', onclick: () => { App.asStudent = true; App.dash(); } }, '🎮 학습'),
-      h('button', { class: 'navbtn', onclick: () => App.features() }, '📚 기능 도감'),
-      h('button', { class: 'navbtn', onclick: () => App.projectB() }, '🎄 마을 프로젝트'),
-      h('button', { class: 'navbtn', onclick: () => App.review() }, '📖 복습'),
+      h('button', { class: 'navbtn', onclick: () => { App.asStudent = true; App.projects(); } }, '📁 프로젝트'),
+      h('button', { class: 'navbtn', onclick: () => { App.asStudent = true; App.skills(); } }, '🎮 연습실'),
+      h('button', { class: 'navbtn', onclick: () => App.features() }, '📚 도감'),
       h('button', { class: 'navbtn', onclick: () => App.shortcuts() }, '⌨️ 단축키'),
-      h('button', { class: 'navbtn', onclick: () => App.progress() }, '📊 내 기록'),
+      h('button', { class: 'navbtn', onclick: () => App.faq() }, '❓ FAQ'),
+      h('button', { class: 'navbtn', onclick: () => App.favs() }, '⭐ 즐겨찾기'),
+      h('button', { class: 'navbtn nav-opt', onclick: () => { App.asStudent = true; App.dash(); } }, '📅 차시 학습'),
       h('div', { class: 'star-pill', title: '모은 별' }, '⭐ ' + stars()),
       h('div', { class: 'nick-pill', onclick: () => App.userMenu() }, h('span', { class: 'av' }, t[2]), a ? a.name : (d.nick || '손님'), h('span', { id: 'syncDot', title: '저장 상태', style: { fontSize: '11px', opacity: .8 } }, a ? '☁️' : '💾')));
   },
@@ -3762,7 +3850,7 @@ const App = {
       const wrap = h('div', { class: 'stage-list' }); body.append(wrap);
       if (hasRev) { const pick = Review.pick(L, 3); wrap.append(card(1, '0~5분 · 지난 시간 복습', li === 1 ? '컴퓨터 기본 조작 확인' : '지난 시간에 배운 기능 다시 써 보기', li === 1 ? '마우스 드래그와 키보드 함께 누르기를 짧게 확인해요. 어려우면 <b>LEVEL 0</b>에서 차근차근 연습할 수 있어요.' : '예전에 배운 기능이 <b>힌트 없이</b> 무작위로 나와요. 기억이 안 나면 "잘 모르겠어요"를 눌러 다시 배워요.', les.review ? 'done' : 'now', pick.length ? B(les.review ? '↺ 복습 한 번 더' : '▶ 복습 시작', les.review ? 'btn-ghost' : 'btn-gold', () => Lesson.startSeq(L.id, 'review', pick, 'review')) : B('복습할 내용이 아직 없어요', 'btn-ghost', () => Store.set(x => { x.lessons[L.id] = Object.assign(x.lessons[L.id] || {}, { review: Date.now() }); }) || App.lesson(lid)), pick.length ? h('div', { class: 'mini-list' }, pick.map(x => h('span', { class: 'chip tag-basic' }, `${x.L.n} · ${x.L.missions[x.i].t}`))) : null)); }
       // 교사 계정(그리고 '학급 전체 차시 열기')은 순서와 상관없이 모든 단계가 열려 있다.
-      const free = !!(d.unlockAll || App.isT()), revOk = !hasRev || les.review || free;
+      const free = true, revOk = !hasRev || les.review || free;
       const dots = h('div', { class: 'mini-list' }, L.missions.map((m, i) => { const s = Mast.get(m.id).s; return h('span', { class: 'mdot2', title: `${m.t} · ${MAST[s]}`, style: { background: d.missions[m.id] ? MAST_COL[Math.max(2, s)] : 'rgba(255,255,255,.08)', color: d.missions[m.id] ? '#06182c' : '' }, onclick: e => { e.stopPropagation(); if (!revOk) return toast('먼저 ① 복습을 해 주세요.'); Lesson.open(L.id, i); } }, i + 1); }));
       wrap.append(card(hasRev ? 2 : 1, hasRev ? '5~14분 · 새로운 기능 학습' : '새로운 기능 학습', `새 기능 배우기 (${p.done}/${p.total})`, '설명 → 시범 → 직접 해 보기. 미션마다 <b>기초 · 일반 · 도전</b> 난이도를 고를 수 있어요.', p.all ? 'done' : revOk ? 'now' : 'lock', B(p.all ? '↺ 다시 연습' : p.done ? '▶ 이어서 배우기' : '▶ 배우기 시작', p.all ? 'btn-ghost' : 'btn-gold', () => Lesson.open(L.id), !revOk), dots));
       if (L.solo.length) wrap.append(card(hasRev ? 3 : 2, hasRev ? '14~20분 · 함께 연습하기' : '혼자 도전하기', '힌트 줄이고 혼자 해 보기', `핵심 기능 ${L.solo.length}개를 <b>간단한 힌트만</b> 보고 해 봐요. 성공하면 숙련도가 "스스로 성공"으로 올라가요.`, d.levelSolo[L.id] ? 'done' : p.all || free ? 'now' : 'lock', B(d.levelSolo[L.id] ? '↺ 한 번 더' : '▶ 도전 시작', d.levelSolo[L.id] ? 'btn-ghost' : 'btn-ice', () => Lesson.startSeq(L.id, 'solo', L.solo.map(id => ({ L, i: L.missions.findIndex(m => m.id === id) })).filter(x => x.i >= 0), 'solo'), !p.all && !free)));
@@ -3777,14 +3865,14 @@ const App = {
 const MODES = { learn: ['기초', '단계별 안내와 시범'], solo: ['일반', '간단한 힌트만'], hard: ['도전', '목표만 보고 스스로'] };
 const Lesson = {
   L: null, curL: null, cur: null, idx: -1, mode: 'learn', seq: null, seqPos: 0, seqKind: null, ed: null, cb: null, cleanup: [], doneFlag: false, sceneOwner: null,
-  open(lid, idx, mode) { const L = LV(lid), d = Store.get(); this.L = L; this.seq = null; if (idx == null) { idx = L.missions.findIndex(m => !d.missions[m.id]); if (idx < 0) idx = 0; } this.build(); App.show('lesson'); this.start(L, idx, mode || Mast.defMode(L.missions[idx].id)); },
-  startSeq(lid, kind, items, mode) { if (!items.length) return; this.L = LV(lid); this.seq = items; this.seqPos = 0; this.seqKind = kind; this.build(); App.show('lesson'); this.start(items[0].L, items[0].i, mode); },
-  startWork(lid) { this.L = LV(lid); this.seq = null; this.build(); App.show('lesson'); this.start(this.L, -1, 'work'); },
+  open(lid, idx, mode) { const L = LV(lid), d = Store.get(); this.L = L; this.seq = null; this.ret = this._retNext || null; this._retNext = null; if (idx == null) { idx = L.missions.findIndex(m => !d.missions[m.id]); if (idx < 0) idx = 0; } this.build(); App.show('lesson'); this.start(L, idx, mode || Mast.defMode(L.missions[idx].id)); },
+  startSeq(lid, kind, items, mode) { if (!items.length) return; this.ret = null; this.L = LV(lid); this.seq = items; this.seqPos = 0; this.seqKind = kind; this.build(); App.show('lesson'); this.start(items[0].L, items[0].i, mode); },
+  startWork(lid) { this.L = LV(lid); this.seq = null; this.ret = null; this.build(); App.show('lesson'); this.start(this.L, -1, 'work'); },
   build() {
     const s = $('#lesson'); s.innerHTML = '';
     this.titleEl = h('div', { class: 'lesson-title' }); this.dots = h('div', { class: 'mission-dots' });
     const hb = (l, fn, t) => h('button', { class: 'navbtn', title: t || l, onclick: fn }, l);
-    s.append(h('div', { class: 'lesson-head' }, h('button', { class: 'navbtn', onclick: () => this.exit() }, '◀ 차시 홈'), this.titleEl, this.dots, h('div', { style: { flex: 1 } }),
+    s.append(h('div', { class: 'lesson-head' }, h('button', { class: 'navbtn', id: 'btn-exit', onclick: () => this.exit() }, this.ret ? '◀ 돌아가기' : '◀ 차시 홈'), this.titleEl, this.dots, h('div', { style: { flex: 1 } }),
       hb('⌨️ 단축키', () => App.shortcutModal()), hb('❓ 도움말', () => this.help()), h('div', { class: 'star-pill' }, '⭐ ' + stars())));
     this.body = h('div', { class: 'lesson-body' }); s.append(this.body);
     this.wrap = h('div', { class: 'stage-wrap' }); this.stageEl = h('div', { class: 'stage', tabindex: '0', style: { outline: 'none' } }); this.fbEl = h('div', { class: 'feedback' });
@@ -3806,7 +3894,7 @@ const Lesson = {
     else if (!this.ed && m.keys && document.activeElement !== this.stageEl) { e.preventDefault(); this.stageEl.focus(); this.fb('연습 화면을 다시 선택했어요. 이제 키를 눌러 보세요!', 'info'); }
   },
   mission() { return this.cur; },
-  exit() { this.teardown(); clearInterval(this._idle); try { speechSynthesis.cancel(); } catch (e) { } if (this.ed) { this.ed.destroy(); this.ed = null; } Sfx.stopBgm(); App.lesson(this.L.id); },
+  exit() { this.teardown(); clearInterval(this._idle); try { speechSynthesis.cancel(); } catch (e) { } if (this.ed) { this.ed.destroy(); this.ed = null; } Sfx.stopBgm(); const r = this.ret; this.ret = null; if (r) r(); else App.lesson(this.L.id); },
   teardown() { this.cleanup.forEach(f => { try { f(); } catch (e) { console.error(e); } }); this.cleanup = []; if (this.hudEl) { this.hudEl.classList.add('hidden'); this.extraEl.innerHTML = ''; this.fbEl.classList.remove('show'); this.nowEl.classList.add('hidden'); } clearTimeout(this._fbT); },
   ensureStage(m) {
     if (m.stage === 'dom') { if (this.ed) { this.ed.destroy(); this.ed = null; this.cb = null; this.sceneOwner = null; } this.stageEl.innerHTML = ''; this.wrap.classList.add('domstage'); }
@@ -3848,11 +3936,11 @@ const Lesson = {
   },
   renderHead() {
     const m = this.cur, L = this.curL, d = Store.get();
-    const kind = this.mode === 'work' ? '작품 만들기' : this.seq ? (this.seqKind === 'review' ? '지난 시간 복습' : '함께 연습') : '새 기능 배우기';
+    const kind = this.L.combo ? '제작 준비 훈련실 · 기능 조합 미션' : this.mode === 'work' ? '작품 만들기' : this.seq ? (this.seqKind === 'review' ? '지난 시간 복습' : '함께 연습') : '새 기능 배우기';
     this.titleEl.innerHTML = `<small>${this.L.n} · ${kind}${this.seq && L !== this.L ? ` (${L.n}에서 배운 기능)` : ''}</small><b>${m.ico || ''} ${m.t}</b>`;
     this.dots.innerHTML = '';
     if (this.seq) this.seq.forEach((x, i) => this.dots.append(h('div', { class: 'mdot' + (i < this.seqPos ? ' done' : '') + (i === this.seqPos ? ' cur solo' : '') }, i + 1)));
-    else if (this.mode !== 'work') { const fu = L.missions.findIndex(x => !d.missions[x.id]); L.missions.forEach((x, i) => { const locked = !d.unlockAll && !App.isT() && fu >= 0 && i > fu; this.dots.append(h('div', { class: 'mdot' + (d.missions[x.id] ? ' done' : '') + (i === this.idx ? ' cur' : ''), title: x.t + (locked ? ' (앞 미션을 먼저 완료하세요)' : ''), style: locked ? { opacity: .35 } : {}, onclick: () => { if (locked) return toast('🔒 앞의 미션을 먼저 성공해야 해요.'); this.start(L, i, Mast.defMode(x.id)); } }, i + 1)); }); }
+    else if (this.mode !== 'work') { const fu = L.missions.findIndex(x => !d.missions[x.id]); L.missions.forEach((x, i) => { const locked = false; this.dots.append(h('div', { class: 'mdot' + (d.missions[x.id] ? ' done' : '') + (i === this.idx ? ' cur' : ''), title: x.t + (locked ? ' (앞 미션을 먼저 완료하세요)' : ''), style: locked ? { opacity: .35 } : {}, onclick: () => { if (locked) return toast('🔒 앞의 미션을 먼저 성공해야 해요.'); this.start(L, i, Mast.defMode(x.id)); } }, i + 1)); }); }
   },
   renderGuide() {
     const m = this.cur, g = this.guide, mode = this.mode; g.innerHTML = '';
@@ -3872,15 +3960,15 @@ const Lesson = {
     if (mode === 'learn') this.setNow(); else if (mode !== 'work') this.setNow(mode === 'solo' ? m.solo : m.solo, mode === 'solo' ? m.combo : '', true);
   },
   retry() {
-    if (this.mode === 'work') return Modal.open({ ico: '🧹', k: '작품 다시 만들기', title: '이 작품만 처음 상태로 되돌릴까요?', body: '<p>지금 작품에서 바꾼 내용이 사라지고 <b>시작 장면</b>으로 돌아가요. 다른 차시의 진도와 작품은 그대로예요.</p>', buttons: [['네, 다시 만들게요', 'btn-red', () => { const id = this.cur.id; Store.set(d => { const w = d.works[id] || {}; d.works[id] = { seen: 1, done: w.done }; }); this.start(this.curL, -1, 'work'); this.fb('작품을 시작 장면으로 되돌렸어요.', 'info'); }], ['취소', 'btn-ghost', null]] });
+    if (this.mode === 'work') return Modal.open({ ico: '🧹', k: '작품 다시 만들기', title: '이 작품만 처음 상태로 되돌릴까요?', body: '<p>지금 작품에서 바꾼 내용이 사라지고 <b>시작 장면</b>으로 돌아가요. 다른 차시의 진도와 작품은 그대로예요.</p>', buttons: [['네, 다시 만들게요', 'btn-red', () => { const id = this.cur.id; this.teardown(); Store.set(d => { const w = d.works[id] || {}; d.works[id] = { seen: 1, done: w.done }; }); this.start(this.curL, -1, 'work'); this.fb('작품을 시작 장면으로 되돌렸어요.', 'info'); }], ['취소', 'btn-ghost', null]] });
     this._skipIntro = true; this.start(this.curL, this.idx, this.mode); this.fb('↺ 이 미션만 처음으로 되돌렸어요. 다른 진도는 그대로예요!', 'info');
   },
   // 화면 조정 도우미 — 초반 차시(LEVEL 1~4)의 기초 학습과 작품 만들기에서 항상 보여 준다.
   camHelp() {
     const el = this.camEl, ed = this.ed, m = this.cur, li = LEVELS.indexOf(this.curL); if (!el) return; el.classList.add('hidden'); el.innerHTML = '';
-    if (!ed || !m || m.editor === false || li < 1 || li > 4 || !['learn', 'work'].includes(this.mode)) return;
+    if (!ed || !m || m.editor === false || ((li < 1 || li > 4) && !this.curL.combo && !this.ret) || !['learn', 'work'].includes(this.mode)) return;
     // LEVEL 1에서는 이미 배운 조작만 보여 준다(1번: 회전, 2번: 확대, 3번: 이동을 배움).
-    const n = li === 1 && this.idx >= 0 ? this.idx : 9, items = [['orbit', '🖱️', '<b>빈 곳</b>을 누른 채 끌기', '화면 돌리기', 1], ['pan', '␣', '<b>Space</b> 누른 채 끌기', '화면 옮기기', 3], ['zoom', '🖲️', '<b>휠</b> 굴리기', '확대·축소', 2]].filter(x => n >= x[4]);
+    const n = li === 1 && this.idx >= 0 ? this.idx : 9, items = (IS_TOUCH ? [['orbit', '☝️', '<b>한 손가락</b>으로 빈 곳 끌기', '화면 돌리기', 1], ['pan', '✌️', '<b>두 손가락</b>으로 끌기', '화면 옮기기', 3], ['zoom', '🤏', '<b>벌리기·오므리기</b>', '확대·축소', 2]] : [['orbit', '🖱️', '<b>빈 곳</b>을 누른 채 끌기', '화면 돌리기', 1], ['pan', '␣', '<b>Space</b> 누른 채 끌기', '화면 옮기기', 3], ['zoom', '🖲️', '<b>휠</b> 굴리기', '확대·축소', 2]]).filter(x => n >= x[4]);
     if (!items.length) return;
     el.append(h('span', { class: 'ch-t' }, '화면 조정'), ...items.map(x => h('span', { class: 'ch-i', 'data-k': x[0], html: `<i>${x[1]}</i>${x[2]} = <u>${x[3]}</u>` })));
     el.classList.remove('hidden');
@@ -3937,12 +4025,13 @@ const Lesson = {
       }
       const nxi = L.missions.findIndex((x, i) => i > this.idx && !Store.get().missions[x.id]), next = nxi >= 0 ? nxi : (this.idx + 1 < L.missions.length ? this.idx + 1 : -1), allDone = L.missions.every(x => Store.get().missions[x.id]);
       Modal.open({ raw: this.rewardRaw('⭐', first ? '미션 완료! 별 하나 획득' : '미션 완료!', `<b>${m.t}</b>을(를) 해냈어요. 실수해도 괜찮아요. 해낼 때까지 해 본 게 진짜 실력이에요!` + mastLine, m.village ? `🎄 <b>마을 디자인 아이디어</b> ${m.village}` : null,
-        [['↺ 다시 연습하기', 'btn-ghost', () => this.start(L, this.idx, mode === 'learn' ? 'solo' : mode)], allDone && nxi < 0 ? ['차시 홈으로 ▶', 'btn-gold', () => this.exit()] : ['다음 미션 ▶', 'btn-gold', () => this.start(L, next, Mast.defMode(L.missions[next].id))]]), sticky: true });
+        this.ret ? [['↺ 다시 연습하기', 'btn-ghost', () => this.start(L, this.idx, mode)], ['◀ 훈련실로 돌아가기', 'btn-gold', () => this.exit()]] : [['↺ 다시 연습하기', 'btn-ghost', () => this.start(L, this.idx, mode === 'learn' ? 'solo' : mode)], allDone && nxi < 0 ? ['차시 홈으로 ▶', 'btn-gold', () => this.exit()] : ['다음 미션 ▶', 'btn-gold', () => this.start(L, next, Mast.defMode(L.missions[next].id))]]), sticky: true });
     }, 900);
   },
   rewardRaw(ico, title, msg, idea, buttons) { return h('div', null, h('div', { class: 'reward' }, h('div', { class: 'big-star' }, ico), h('h2', null, title), h('p', { html: msg }), idea ? h('div', { class: 'idea-card', html: idea }) : null), h('div', { class: 'modal-foot', style: { justifyContent: 'center', paddingTop: '14px' } }, buttons.map(([l, c, fn]) => h('button', { class: 'btn btn-lg ' + c, onclick: () => { Modal.close(); fn && fn(); } }, l)))); },
   workDone() {
-    const m = this.cur, L = this.curL; Works.save(m.id, { done: Date.now() }); L.missions.forEach(x => { if (Mast.get(x.id).s >= 2) Mast.put(x.id, k => { k.used = (k.used || 0) + 1; }); });
+    const m = this.cur, L = this.curL; Works.save(m.id, { done: Date.now() });
+    if (L.combo) { PStore.set(L.pn, p => p.combo = Date.now()); Sfx.win(); confetti(); return setTimeout(() => Modal.open({ raw: this.rewardRaw(m.ico || '🎖️', '기능 조합 미션 완료!', `<b>${PJ(L.pn).mini.t}</b>을(를) 해냈어요. 이제 같은 방법으로 실제 딜라이텍스에서 <b>${L.t}</b>을(를) 만들어 봐요!`, null, [['조금 더 해 보기', 'btn-ghost', null], ['🛠️ 실제 프로젝트 제작 시작하기 ▶', 'btn-gold', () => { this.ret = () => App.project(L.pn, 2); this.exit(); }]]), sticky: true }), 900); } L.missions.forEach(x => { if (Mast.get(x.id).s >= 2) Mast.put(x.id, k => { k.used = (k.used || 0) + 1; }); });
     Store.set(d => { if (!d.orns.includes(L.id)) d.orns.push(L.id); }); Sfx.win(); confetti();
     setTimeout(() => Modal.open({ raw: this.rewardRaw(m.ico || '🎨', `작품 완성! "${m.t}"`, `체크리스트를 모두 채웠어요. 겨울 장식품 <b>"${L.orn[1]}"</b> ${L.orn[0]}도 받았어요!<br>작품은 내 기록에 저장됐고, 언제든 다시 열어 고칠 수 있어요.`, '🎄 <b>다음 차시에는</b> 이 작품에 이어서 마을을 더 키워요!', [['🎨 조금 더 꾸미기', 'btn-ghost', null], ['📋 정리하러 가기 ▶', 'btn-gold', () => { const Lx = this.L; this.exit(); Lesson.wrapUp(Lx); }]]), sticky: true }), 900);
   },
@@ -4516,14 +4605,14 @@ function makeWork(L, def) {
     setup(api) {
       const ed = api.ed, id = W.id, w = Works.get(id) || {}, ev = Object.assign({ shots: [] }, w.ev || {}); ev.shots = ev.shots || [];
       if (w.scene) ed.loadAll(w.scene);
-      else { const prev = def.inherit === false ? null : Works.prevScene(L); if (prev) ed.loadAll(prev); else PRESETS.village(ed); ed.scenes.length = Math.max(1, ed.scenes.length); if (def.base) def.base(ed); const b0 = {}; ed.all().forEach(o => b0[o.kind] = (b0[o.kind] || 0) + 1); ev.b0 = b0; }
+      else { const prev = def.inherit === false ? null : Works.prevScene(L); if (prev) ed.loadAll(prev); else if (def.preset) def.preset(ed); else PRESETS.village(ed); ed.scenes.length = Math.max(1, ed.scenes.length); if (def.base) def.base(ed); const b0 = {}; ed.all().forEach(o => b0[o.kind] = (b0[o.kind] || 0) + 1); ev.b0 = b0; }
       if (def.cam) def.cam(ed); else ed.viewAll();
       if (def.mark) def.mark(ed);
       ed.resetHistory(); let t, alive = true, lastNow = null;
       const flush = () => { clearTimeout(t); if (alive || true) Works.save(id, { scene: ed.serializeAll(), ev }); };
       const chk = () => {
         const items = def.checks(ed, ev), extra = def.hard ? def.hard(ed, ev) : [], n = items.filter(i => i[0]).length;
-        api.hud(`<div style="font-weight:900;margin-bottom:4px">${def.ico} 작품 체크리스트 ${n}/${items.length}</div>` + hudList(items) + (extra.length ? `<div style="font-weight:900;margin:6px 0 2px;color:#d6a6ff">🟣 도전 과제 (선택)</div>` + hudList(extra) : ''));
+        api.hud(`<div style="font-weight:900;margin-bottom:4px">${def.ico} ${L.combo ? '조합 미션' : '작품'} 체크리스트 ${n}/${items.length}</div>` + hudList(items) + (extra.length ? `<div style="font-weight:900;margin:6px 0 2px;color:#d6a6ff">🟣 도전 과제 (선택)</div>` + hudList(extra) : ''));
         const next = items.find(i => !i[0]), ni = items.indexOf(next);
         // 현재 할 일 = 아직 안 한 첫 항목 + 그 방법 안내. 내용이 바뀔 때만 다시 표시한다.
         const how = next ? ((def.guide && def.guide(ed, ev, ni)) || workHow(next[1])) : '', key = (next ? next[1] : 'done') + '|' + how;
@@ -4577,7 +4666,9 @@ function makeWork(L, def) {
     checks(ed, ev) { const b = ed.get('내 눈사람'), hh = ed.byKind('hat')[0], sc = ed.byKind('scarf')[0]; if (!b) return [[false, '내 눈사람이 없어요. 🧹 작품 처음부터 다시 만들기를 눌러 주세요']]; const p = ed._worldPos(b), k = b.root.scale.y; const on = (o, lo, hi) => { if (!o) return false; const q = ed._worldPos(o); return Math.hypot(q.x - p.x, q.z - p.z) < .7 * k && q.y >= lo * k && q.y <= hi * k; };
       return [[Math.hypot(p.x - Z2.x, p.z - Z2.z) < 2.2, '내 눈사람을 포토존으로 옮기기'], [k >= 1.3 || k <= .75, `눈사람 크기 바꾸기 (지금 ${k.toFixed(1)}배, 1.3배 이상)`], [angDiff(b.root.rotation.y, 0) > .5, '눈사람 방향 돌리기 (R → 초록 고리)'], [on(hh, 1.9, 3.2), '모자를 머리 위에 올리기 (↕ 높이)'], [on(sc, 1.2, 2.0), '목도리를 키워서 목 높이에 두르기'], CAM(ev), SHOT(ev)]; },
     // 모자·목도리는 눈사람을 키운 만큼 같이 키워야 맞는다는 것을 그때그때 알려 준다.
-    guide(ed, ev, i) { const b = ed.get('내 눈사람'); if (!b) return ''; const k = b.root.scale.y, fit = (o, nm) => { if (!o) return ''; const r = o.root.scale.y / k; return r < .85 ? `눈사람이 <b>${k.toFixed(1)}배</b>라서 ${nm}가 작아요(눈사람 속에 파묻혀요). ${nm}를 클릭하고 보라색 <b>⤡ 손잡이</b>로 <b>약 ${k.toFixed(1)}배</b>까지 키우세요. ` : r > 1.6 ? `${nm}가 눈사람보다 너무 커요. <b>⤡ 손잡이</b>로 조금 줄이세요. ` : ''; };
+    guide(ed, ev, i) { const b = ed.get('내 눈사람'); if (!b) return ''; const lost = nm => `<b>${nm}</b>가 사라졌어요! <b>Ctrl + Z</b>(취소하기)를 눌러 되돌리거나, 아래 <b>🧹 작품 처음부터 다시 만들기</b>를 누르면 다시 생겨요.`;
+      if (i === 3 && !ed.byKind('hat').length) return lost('모자'); if (i === 4 && !ed.byKind('scarf').length) return lost('목도리');
+      const k = b.root.scale.y, fit = (o, nm) => { if (!o) return ''; const r = o.root.scale.y / k; return r < .85 ? `눈사람이 <b>${k.toFixed(1)}배</b>라서 ${nm}가 작아요(눈사람 속에 파묻혀요). ${nm}를 클릭하고 보라색 <b>⤡ 손잡이</b>로 <b>약 ${k.toFixed(1)}배</b>까지 키우세요. ` : r > 1.6 ? `${nm}가 눈사람보다 너무 커요. <b>⤡ 손잡이</b>로 조금 줄이세요. ` : ''; };
       if (i === 3) return fit(ed.byKind('hat')[0], '모자') + '모자를 눈사람 위로 끌어온 다음, 초록색 <b>↕ 손잡이</b>로 머리 꼭대기까지 올리세요. (화면을 돌려 옆에서 보면 높이가 잘 보여요)';
       if (i === 4) return fit(ed.byKind('scarf')[0], '목도리') + '목도리를 눈사람 위로 끌어온 다음, <b>↕ 손잡이</b>로 <b>목 높이</b>(머리와 몸 사이)까지 올리세요.';
       return ''; },
@@ -4822,7 +4913,7 @@ App.features = function (q0, c0) {
     const d = Store.get(); let q = q0 || '', cat = c0 == null ? -1 : c0;
     const list = h('div', { class: 'feat-list' }), cats = h('div', { class: 'ptabs dark' }), cnt = h('span', { class: 'star-pill' });
     const inp = h('input', { class: 'fld', id: 'feat-q', placeholder: '🔍 기능 이름으로 찾기 (예: 붙이기, 물리, 변수, 말풍선)', value: q, style: { maxWidth: '520px' }, oninput: e => { q = e.target.value.trim(); draw(); } });
-    body.append(h('div', { class: 'page-head' }, h('div', null, h('div', { class: 'eyebrow' }, 'ALL FEATURES'), h('h1', null, '📚 딜라이텍스 기능 도감'), h('p', { html: `지금까지 배운 기능과 앞으로 배울 기능 <b>${FEATURES.length}가지</b>를 한곳에서 찾아봐요. 모르는 기능은 <b>연습하러 가기</b>로 바로 연습할 수 있어요.` })), cnt), inp, cats,
+    body.append(h('div', { class: 'page-head' }, h('div', null, h('div', { class: 'eyebrow' }, 'ALL FEATURES'), h('h1', null, '📚 딜라이텍스 기능 도감'), h('p', { html: `딜라이텍스 기능 <b>${FEATURES.length}가지</b>를 한곳에서 찾아봐요. 어떤 기능이든 <b>연습하러 가기</b>로 바로 연습하고, 그 기능을 쓰는 프로젝트로 이동할 수 있어요.` })), cnt), inp, cats,
       h('div', { class: 'feature-legend', style: { margin: '10px 0 14px' }, html: Object.values(LIC).map(l => `<span class="chip ${l[1]}">${l[0]}</span>`).join(' ') + ' <span style="opacity:.8">· 라이선스 구분은 공식 가격 안내(무료: 기본 CoBlocks·프로젝트 2개·업로드 10개 / Pro: 모든 CoBlocks·물리·AI)를 바탕으로 했고, 확실하지 않은 것은 "계정·설정 확인"으로 표시했어요.</span>' }), list);
     const draw = () => {
       cats.innerHTML = ''; cats.append(h('button', { class: cat < 0 ? 'on' : '', onclick: () => { cat = -1; draw(); } }, '전체'), ...FCATS.map((c, i) => h('button', { class: cat === i ? 'on' : '', onclick: () => { cat = i; draw(); } }, c)));
@@ -4830,12 +4921,435 @@ App.features = function (q0, c0) {
       const learned = FEATURES.filter(f => f[6] && d.missions[f[6]]).length; cnt.textContent = `연습으로 배운 기능 ${learned} / ${FEATURES.filter(f => f[6]).length}`;
       if (!rows.length) list.append(h('div', { class: 'panel' }, '찾는 기능이 없어요. 다른 낱말로 검색해 보세요.'));
       rows.forEach(f => { const x = f[6] ? allMissions().find(m => m.m.id === f[6]) : null, done = f[6] && d.missions[f[6]], s = f[6] ? Mast.get(f[6]).s : 0, li = x ? LEVELS.indexOf(x.L) : -1;
-        list.append(h('div', { class: 'feat-card' + (done ? ' done' : ''), 'data-mid': f[6] || '' }, h('div', { class: 'fc-h' }, h('b', null, f[1]), h('span', { class: 'chip ' + LIC[f[5]][1] }, LIC[f[5]][0]), done ? h('span', { class: 'chip', style: { background: MAST_COL[s] + '33', border: `1px solid ${MAST_COL[s]}`, color: '#fff' } }, '✓ ' + MAST[s]) : null),
+        const rel = f[6] ? PROJECTS.filter(p => p.sk.some(k => SKILLS[k][2] === f[6])) : [];
+        list.append(h('div', { class: 'feat-card' + (done ? ' done' : ''), 'data-mid': f[6] || '' }, h('div', { class: 'fc-h' }, Fav.btn('f', f[1], true), h('b', null, f[1]), h('span', { class: 'chip ' + LIC[f[5]][1] }, LIC[f[5]][0]), done ? h('span', { class: 'chip', style: { background: MAST_COL[s] + '33', border: `1px solid ${MAST_COL[s]}`, color: '#fff' } }, '✓ ' + MAST[s]) : null),
           h('div', { class: 'fc-b', html: `<div><i>📍 위치</i>${f[2]}</div><div><i>🖱️ 사용 방법</i>${f[3]}</div><div><i>💡 활용 예시</i>${f[4]}</div>${f[7] ? `<div><i>⚠️ 알아 두기</i>${f[7]}</div>` : ''}` }),
-          h('div', { class: 'fc-f' }, h('small', null, FCATS[f[0]] + (x ? ` · ${x.L.n} · ${x.m.t}` : ' · 연습장에 없는 기능 (설명만)')), x ? h('button', { class: 'btn btn-sm ' + (done ? 'btn-ghost' : 'btn-ice'), onclick: () => { if (!levelUnlocked(li)) return toast(`🔒 ${x.L.n}은(는) 앞 차시를 마치면 열려요.`, 3000); Lesson.open(x.L.id, x.L.missions.indexOf(x.m)); } }, done ? '↺ 다시 연습' : '🎮 연습하러 가기') : null)));
+          rel.length ? h('div', { class: 'fc-rel' }, h('i', null, '📁 이 기능을 쓰는 프로젝트'), ...rel.map(p => h('button', { class: 'chip chip-btn tag-basic', onclick: () => App.project(p.n, 1) }, `${p.n}차시 ${p.t}`))) : null,
+          h('div', { class: 'fc-f' }, h('small', null, FCATS[f[0]] + (x ? ` · ${x.L.n} · ${x.m.t}` : ' · 연습장에 없는 기능 (설명만)')), x ? h('button', { class: 'btn btn-sm ' + (done ? 'btn-ghost' : 'btn-ice'), onclick: () => Lesson.openFrom(x.L.id, x.L.missions.indexOf(x.m), () => App.features(q, cat)) }, done ? '↺ 다시 연습' : '🎮 연습하러 가기') : null)));
       });
     };
     draw();
+  });
+};
+
+/* ---- guide.js ---- */
+/* ============================================================
+   DELIGHTEX CLASSROOM GUIDE — 프로젝트 24개 · 제작 준비 훈련실 · 즐겨찾기 · FAQ
+   (완전 개방형 참고서: 어떤 기록도 다른 콘텐츠의 접근을 막지 않는다)
+   ============================================================ */
+
+/* ---------- 기능(스킬) 목록 ----------
+   [제목, 아이콘, 연습 미션 id(없으면 null), 설명만 있는 기능일 때 {what, where, how, tip, lic}] */
+const SKILLS = {
+  cam: ['화면 돌려 보기 (카메라 회전)', '🎥', 'L1M1'], zoom: ['확대 · 축소', '🔍', 'L1M2'], pan: ['화면 옮기기 (Space + 드래그)', '✋', 'L1M3'],
+  focus: ['선택한 오브젝트로 다가가기 (V)', '🎯', 'L1M4'], viewall: ['전체 보기 (C)', '🗺️', 'L1M5'],
+  lib: ['라이브러리에서 오브젝트 추가하기', '📦', 'L5M1'], search: ['오브젝트 검색하기', '🔎', 'L5M2'], dragadd: ['끌어다 원하는 곳에 놓기', '🫳', 'L5M4', { where: '왼쪽 아래 라이브러리 → 오브젝트를 누른 채 장면 안으로 끌어다 놓기' }], blocks: ['도형(Building blocks)으로 만들기', '🧊', 'L5M5'],
+  select: ['오브젝트 선택하기', '👆', 'L2M1'], multi: ['여러 개 함께 선택하기 (Shift)', '👥', 'L2M3'], selall: ['모두 선택하기 (Ctrl + A)', '🔲', 'L3M6'],
+  move: ['오브젝트 이동하기', '↔️', 'L2M4'], height: ['높낮이 조절하기 (위로 올리기)', '↕️', 'L2M5'], rotate: ['회전 모드 사용하기', '🔄', 'L3M1', { where: '오브젝트 클릭 → 회전 버튼 (단축키 R)' }], rotate3: ['X·Y·Z 세 방향 회전', '🧭', 'L2M7', { where: '오브젝트 클릭 → 회전 버튼(R) → 빨강·초록·파랑 고리' }],
+  scale: ['크기 조절하기', '⤡', 'L2M8'], scale3: ['가로·세로·높이 따로 바꾸기', '📐', 'L2M9'], snap: ['격자 스냅 활용하기', '#️⃣', 'L3M2'],
+  dup: ['오브젝트 복제하기 (Alt + 드래그)', '👯', 'L3M3'], copy: ['복사 · 붙여넣기 (Ctrl + C / V)', '📋', 'L3M7'], group: ['그룹으로 묶기 (G)', '🧺', 'L3M4'],
+  insp: ['속성창(검사기) 열기', '🪟', 'L4M1'], rename: ['오브젝트 이름 바꾸기', '🏷️', 'L4M2', { where: '오브젝트 더블 클릭(또는 오른쪽 클릭) → 속성창 맨 위의 이름' }], color: ['색상 · 재질 바꾸기', '🎨', 'L4M3'], numpos: ['속성창에서 숫자로 이동 · 회전', '🔢', 'L4M5'],
+  lock: ['잠그기', '🔒', 'L4M10'], del: ['삭제하기', '🗑️', 'L4M12'],
+  attach: ['오브젝트 붙이기 (Attach)', '📎', 'X10M1'], attach2: ['여러 장식 조합해 붙이기', '⛄', 'X10M2', { where: '붙일 오브젝트 오른쪽 클릭 → 붙이기 → 상대 오브젝트의 점 클릭' }], equip: ['캐릭터에 붙이기', '🎒', 'X10M4', { where: '붙일 오브젝트 오른쪽 클릭 → 붙이기 → 캐릭터 몸의 점 클릭' }], detach: ['떼어내기 (Detach)', '✂️', 'X10M5'], parent: ['부모 · 자식 관계 이해하기', '👪', 'X10M6'],
+  anim: ['캐릭터 애니메이션 바꾸기', '🏃', 'X8M2'], pose: ['포즈(Postures) 고르기', '🧍', 'X8M1'], say: ['말풍선 만들기 (Say)', '💬', 'X9M1'], think: ['생각 말풍선 (Think)', '💭', 'X9M2'],
+  env: ['배경(환경) 바꾸기', '🏞️', 'L5M8'], ground: ['필터 · 바닥 이미지', '🟫', 'L5M9'], env360: ['360° 이미지 배경', '🌐', 'L5M10'], bgm: ['배경 음악 넣기', '🎵', 'L6M3'],
+  image: ['이미지 넣기', '🖼️', 'X14M1'], sign: ['글자(텍스트) 안내판 만들기', '🪧', 'L6M2'], upload3d: ['3D 모델 파일 올리기', '🧱', 'X14M3'], media: ['동영상 · 소리 넣기', '🎬', 'X14M4', { where: '왼쪽 아래 업로드 → 동영상 / 소리 탭' }], copyright: ['저작권과 개인정보 지키기', '©️', 'X14M5'],
+  play: ['플레이로 확인하기', '▶️', 'L6M6'],
+  usecode: ['코블록스에서 사용 켜기', '🧩', 'L7M1'], click: ['클릭 이벤트 만들기', '🖱️', 'L7M2'], cbmove: ['이동 블록으로 움직이기', '🚶', 'L7M3'], cbmsg: ['클릭하면 메시지 보여 주기', '✉️', 'L7M4', { where: '위쪽 코드 → Events의 클릭 이벤트 + Actions의 말하기·정보 창' }],
+  repeat: ['반복 구조', '🔁', 'L7M5'], seq: ['여러 행동을 순서대로', '1️⃣', 'L7M6'], ifelse: ['조건문 (만약 ~라면)', '🔀', 'L7M7'],
+  cbsay: ['say 블록으로 말하기', '🗨️', 'X9M3'], info: ['정보 창(팝업) 띄우기', 'ℹ️', 'X9M5'], quiz: ['퀴즈 창 만들기', '❓', 'X9M7'], cbanim: ['코드로 애니메이션 바꾸기', '🎞️', 'X8M5'],
+  cbcolor: ['코드로 색 · 투명도 바꾸기', '🌈', 'X12M2'], parallel: ['동시에 실행하기', '⏩', 'X12M3'], vars: ['변수 만들기 (점수 세기)', '🔢', 'X12M4'], varif: ['변수 + 조건 (게임 종료 조건)', '🏁', 'X12M5'],
+  sound: ['소리 재생하기', '🔊', 'X12M6'], collide: ['충돌 이벤트 (닿으면)', '💥', 'X12M7'], cbdel: ['클릭하면 삭제 + 점수', '🧹', 'X12M8'], cbattach: ['코드로 붙이고 떼기', '🧲', 'X10M7'],
+  scene: ['장면 추가하기', '🎬', 'X13M1'], scenename: ['장면 이름 · 배경 정하기', '📝', 'X13M2'], goto: ['장면 전환하기 (go to scene)', '🚪', 'X13M4'],
+  phys: ['물리 기능 켜기', '🪂', 'X11M1'], mass: ['중력과 질량', '⚖️', 'X11M2'], bounce: ['탄성 (튀는 정도)', '🏀', 'X11M3'], pstatic: ['정적(고정) 오브젝트 설정', '🧱', 'X11M4'], friction: ['마찰', '🧊', 'X11M5'], physcol: ['충돌 실험', '🎳', 'X11M6'], push: ['물체에 힘 주기 (push)', '👉', 'X11M7'],
+  /* ---- 연습장에 없는 기능: 설명만 ---- */
+  signup: ['접속 · 로그인 · 저장하기', '🔑', null, { what: '딜라이텍스(코스페이시스) 사이트에 들어가 학생 계정으로 로그인하고, 내 작품(코스페이스)을 만들어 저장하는 방법이에요.', where: 'edu.delightex.com (옛 edu.cospaces.io) → 로그인 → 코스페이스 → + 코스페이스 만들기', how: '① 선생님이 알려 준 학급 코드나 계정으로 로그인해요. ② 왼쪽 메뉴 <b>코스페이스</b> → <b>+ 코스페이스 만들기</b> → 장면 종류(3D 환경 등)를 골라요. ③ 편집한 내용은 자동으로 저장돼요. 왼쪽 위 이름을 눌러 작품 이름을 바꿔요.', tip: '작품 이름을 바꾸지 않으면 나중에 어떤 작품인지 찾기 어려워요. 만들자마자 이름부터 바꿔요.', lic: 'B' }],
+  gallery: ['갤러리 작품 체험하기', '🖼️', null, { what: '다른 사람이 공개한 작품을 실행해 보면서 어떤 것을 만들 수 있는지 살펴봐요.', where: '왼쪽 메뉴 → 갤러리', how: '작품을 고르고 ▶ 플레이를 눌러요. 방향키(또는 W A S D)로 걷고, 마우스로 둘러봐요.', tip: '학교 계정 설정에 따라 갤러리가 보이지 않을 수 있어요. 그럴 때는 선생님이 준 완성작 링크로 들어가요.', lic: 'A' }],
+  template: ['템플릿 복사해서 시작하기', '📑', null, { what: '선생님이나 책에서 준 템플릿(미리 준비된 작품)을 내 계정으로 복사해서 이어 만드는 방법이에요.', where: '템플릿 링크 열기 → 리믹스(복사) 버튼', how: '① 템플릿 주소를 주소창에 입력해요. ② 작품 화면의 <b>리믹스</b>를 누르면 내 코스페이스에 복사본이 생겨요. ③ 복사본을 열어 편집해요.', tip: '리믹스 버튼이 보이지 않으면 로그인이 풀렸는지, 계정 종류가 맞는지 선생님께 확인해요. 그래도 안 되면 빈 작품에서 직접 만들어요.', lic: 'A' }],
+  keyev: ['키보드 이벤트 (키를 누르면)', '⌨️', null, { what: '플레이 중에 키보드의 특정 키를 누르면 코드가 실행되게 해요. 공을 좌우로 옮기거나 캐릭터를 조종할 때 써요.', where: '코드(CoBlocks) → 이벤트 → "키보드 ~ 키가 눌렸을 때"', how: '① 이벤트 블록에서 키(A, D, 스페이스 등)를 골라요. ② 그 안에 이동·회전 블록을 넣어요. ③ ▶ 플레이에서 키를 눌러 확인해요.', tip: '키가 안 먹으면 플레이 화면을 한 번 클릭해요. 키 이벤트는 고급 CoBlocks라서 Pro 계정에서 쓸 수 있어요.', lic: 'P' }],
+  camset: ['카메라 설정 (걷기 · 날기 · 고정)', '📷', null, { what: '플레이할 때 보는 사람이 어떻게 움직일지 정해요. 걸어 다니기, 날아다니기(헤엄치기), 고정, 궤도 돌기 가운데 고를 수 있어요.', where: '장면 속 카메라 오브젝트를 더블 클릭 → 카메라 → 이동 방식', how: '① 장면에서 카메라 오브젝트를 찾아 더블 클릭해요. ② 이동 방식을 골라요. 바닷속·하늘은 <b>날기</b>, 걸어 다니는 게임은 <b>걷기</b>가 어울려요. ③ 플레이로 확인해요.', tip: '카메라가 안 보이면 왼쪽 위 오브젝트 목록에서 Camera를 찾아 클릭한 뒤 V로 다가가요.', lic: 'B' }],
+  camfollow: ['카메라가 오브젝트를 따라가게 하기', '🎥', null, { what: '카메라를 캐릭터나 자동차에 붙이면 그 오브젝트가 움직일 때 화면도 함께 따라가요. 1인칭·3인칭 게임을 만들 때 써요.', where: '카메라 오브젝트 오른쪽 클릭 → 붙이기 → 따라갈 오브젝트 선택', how: '① 카메라를 캐릭터 뒤쪽 위에 놓아요(3인칭). ② 카메라를 오른쪽 클릭 → 붙이기 → 캐릭터(또는 발판)를 클릭해요. ③ 이제 캐릭터를 움직이는 코드만 만들면 화면이 따라가요.', tip: '카메라 이동 방식은 <b>고정</b>으로 바꿔야 플레이어가 마우스로 카메라를 따로 움직이지 않아요.', lic: 'B' }],
+  clone: ['코드로 복제하기 (복제본 만들기)', '🧬', null, { what: '플레이 중에 코드가 오브젝트를 여러 개 복사해요. 늑대 100마리, 운석 수십 개처럼 손으로 만들기 힘든 수를 만들 때 써요.', where: '코드(CoBlocks) → 아이템 → "~의 복제본 만들기"', how: '① 원본 오브젝트 하나를 만들어요. ② 반복 블록 안에 복제본 만들기 블록을 넣어요. ③ 복제본의 위치를 무작위 수로 정하면 여기저기 흩어져요.', tip: '너무 많이 복제하면 컴퓨터가 느려져요. 처음에는 10개로 시험하고 수를 늘려요. 고급 CoBlocks라서 Pro 계정이 필요해요.', lic: 'P' }],
+  func: ['함수 만들기', '🧮', null, { what: '자주 쓰는 블록 묶음에 이름을 붙여 두고 필요할 때마다 불러 쓰는 방법이에요. 매개변수로 값을 바꿔 가며 쓸 수 있어요.', where: '코드(CoBlocks) → 함수 → 함수 만들기', how: '① 함수 이름을 정해요(예: 운석 떨어뜨리기). ② 함수 안에 블록을 넣어요. ③ 다른 곳에서 "함수 실행" 블록으로 불러요.', tip: '함수 안의 블록이 길어지면 무엇을 하는 함수인지 이름만 보고 알 수 있게 지어요. 고급 CoBlocks(Pro)예요.', lic: 'P' }],
+  random: ['무작위 수 쓰기', '🎲', null, { what: '실행할 때마다 다른 수가 나오게 해요. 몬스터가 나타나는 위치나 운석이 떨어지는 자리를 매번 다르게 만들 때 써요.', where: '코드(CoBlocks) → 연산 → "~부터 ~ 사이의 무작위 수"', how: '위치를 정하는 블록의 숫자 칸에 무작위 수 블록을 끼워 넣어요. 예: x 자리에 -10부터 10 사이의 무작위 수.', tip: '범위를 너무 넓게 잡으면 오브젝트가 화면 밖에 생겨요. 맵 크기에 맞춰요.', lic: 'P' }],
+  timer: ['화면에 점수 · 남은 수 표시하기', '🧾', null, { what: '플레이 화면에 점수나 남은 늑대 수 같은 숫자를 계속 보여 줘요.', where: '글자(텍스트) 오브젝트 + 코드의 "텍스트를 ~로 정하기" 블록', how: '① 라이브러리에서 글자 오브젝트를 놓고 카메라에 붙여요. ② 점수가 바뀔 때마다 텍스트를 변수 값으로 바꾸는 블록을 실행해요.', tip: '글자 오브젝트도 "코블록스에서 사용"을 켜야 코드에 나타나요.', lic: 'P' }],
+  fx: ['특수 효과 오브젝트 (불 · 연기 · 물)', '🔥', null, { what: '라이브러리의 특수 효과 오브젝트를 놓으면 불, 연기, 폭포, 분수 같은 움직이는 효과를 낼 수 있어요.', where: '라이브러리 → 특수(Special) 범주', how: '① 효과 오브젝트를 장면에 끌어다 놓아요. ② 크기와 높이를 조절해요. ③ 플레이를 눌러야 효과가 움직여요.', tip: '효과를 너무 많이 놓으면 느려져요. 꼭 필요한 곳에만 써요.', lic: 'B' }],
+  websearch: ['이미지 웹 검색으로 가져오기', '🌍', null, { what: '업로드 창의 웹 검색으로 인터넷 그림을 찾아 한 번에 작품 안으로 가져와요.', where: '왼쪽 아래 업로드 → 이미지 → 웹 검색', how: '① 검색어를 입력해요. ② 마음에 드는 그림을 장면으로 끌어다 놓아요. ③ 크기와 방향을 맞춰 벽에 걸어요.', tip: '남이 만든 그림은 출처를 밝히고, 사람 얼굴 사진은 쓰지 않아요. 업로드 개수는 무료 계정에서 제한이 있어요.', lic: 'A' }],
+  gif: ['움직이는 GIF 이미지 넣기', '🎞️', null, { what: 'GIF 파일을 이미지처럼 올리면 장면 안에서 움직이는 그림이 돼요.', where: '왼쪽 아래 업로드 → 이미지 → 파일 올리기', how: 'GIF 파일을 올리고 장면에 끌어다 놓아요. 플레이를 누르면 움직여요.', tip: '용량이 큰 GIF는 올라가지 않거나 느려요. 작은 파일을 골라요.', lic: 'A' }],
+  tinker: ['틴커캐드 3D 모델 내려받기', '🛠️', null, { what: '무료 3D 모델링 사이트 틴커캐드에서 다른 사람이 만든 모델을 찾아 파일로 내려받는 방법이에요.', where: 'tinkercad.com → 갤러리 검색 → 복사하여 편집 → 내보내기(.obj 또는 .glb)', how: '① 틴커캐드에 로그인해요. ② 갤러리에서 모델을 검색해요. ③ 내 디자인으로 복사한 뒤 내보내기에서 파일 형식을 골라 저장해요.', tip: '캐릭터 이름이 붙은 모델은 저작권이 있을 수 있어요. 수업 안에서만 쓰고 공개 갤러리에는 올리지 않아요.', lic: 'A' }],
+  merge: ['머지 큐브 작품 만들기', '🧊', null, { what: '손에 든 머지 큐브(종이 큐브) 위에 작품이 홀로그램처럼 나타나는 작품 종류예요. 큐브의 6면과 안쪽에 오브젝트를 놓아요.', where: '코스페이스 만들기 → 장면 종류에서 MERGE Cube 선택', how: '① 새 코스페이스를 만들 때 머지 큐브를 골라요. ② 화면의 큐브 위·옆·안에 오브젝트를 붙여요. ③ 스마트폰 앱에서 작품을 열고 큐브를 비춰요.', tip: '머지 큐브는 <b>추가 옵션(애드온)</b>이라 학교 계정에 포함되어 있어야 해요. 한 번 머지 큐브로 만든 작품은 다른 종류로 바꿀 수 없어요.', lic: 'M' }],
+  mergeprop: ['머지 큐브 속성 다루기', '⚙️', null, { what: '큐브의 색, 투명도, 안쪽 보기 같은 속성을 바꿔 작품 분위기를 정해요.', where: '머지 큐브 더블 클릭 → 속성창', how: '큐브를 더블 클릭해 색과 투명도를 바꿔요. 안쪽을 보이게 하면 큐브 속에 보물을 숨길 수 있어요.', tip: '큐브를 완전히 불투명하게 하면 안에 넣은 오브젝트가 보이지 않아요.', lic: 'M' }],
+  phone: ['스마트폰 앱에서 작품 실행하기', '📱', null, { what: '모바일 앱에서 내 작품을 열어 AR(머지 큐브)·VR로 감상해요.', where: '스마트폰 앱 실행 → 로그인 → 내 코스페이스 → 플레이', how: '① 앱에 같은 계정으로 로그인해요. ② 작품을 열고 플레이를 눌러요. ③ 오른쪽 아래 보기 방식에서 AR 또는 VR을 골라요.', tip: '와이파이나 모바일 데이터가 연결되어 있어야 해요. 수업 전에 앱 설치와 로그인을 미리 해 둬요.', lic: 'A' }],
+  vr: ['VR 모드로 감상하기', '🥽', null, { what: '스마트폰을 카드보드(VR 안경)에 넣고 작품 속에 들어간 것처럼 봐요. 고개를 돌리면 화면도 돌아가요.', where: '스마트폰 앱 → 작품 플레이 → 보기 방식 → VR', how: '① 작품을 플레이해요. ② VR을 누르면 화면이 둘로 나뉘어요. ③ 카드보드에 넣고 봐요. 가운데 조준점으로 오브젝트를 바라보고 터치하면 클릭이 돼요.', tip: 'VR에서는 키보드를 쓸 수 없어요. 입력은 <b>클릭 이벤트</b>로만 만들어요. 오래 보면 어지러우니 5분마다 쉬어요.', lic: 'A' }],
+  path: ['경로 오브젝트와 경로 따라 이동', '🛤️', null, { what: '구불구불한 길(경로)을 그려 두고, 오브젝트가 그 길을 따라 움직이게 해요. 롤러코스터나 하늘을 나는 장면에 써요.', where: '라이브러리 → 특수(Special) → 경로 / 코드 → 동작 → "경로를 따라 이동하기"', how: '① 경로 오브젝트를 놓고 점을 끌어 길 모양을 만들어요. ② 코드에서 카트가 그 경로를 몇 초 동안 따라가게 해요. ③ 시간을 줄이면 빨라져요.', tip: '경로의 점을 너무 급하게 꺾으면 카트가 휙 돌아요. 점을 여러 개 써서 부드럽게 만들어요.', lic: 'B' }],
+  orbit: ['자전과 공전의 차이', '🪐', null, { what: '<b>자전</b>은 제자리에서 스스로 도는 것, <b>공전</b>은 다른 물체 둘레를 도는 것이에요. 딜라이텍스에서는 행성을 태양(또는 태양 자리에 둔 보이지 않는 오브젝트)에 붙인 뒤 부모를 돌리면 공전이 돼요.', where: '붙이기(Attach) + 코드의 회전 블록 + 무한 반복', how: '① 태양 자리에 작은 오브젝트를 두고 행성을 거기에 붙여요. ② 그 부모를 계속 회전시키면 행성이 둘레를 돌아요. ③ 행성 자신을 돌리면 자전이에요.', tip: '행성마다 공전 속도를 다르게 하려면 행성마다 부모를 따로 만들어요. 한 바퀴 도는 시간을 길게 하면 느리게 돌아요.', lic: 'B' }]
+};
+const skillInfo = k => { const s = SKILLS[k]; if (!s) return null; const x = s[2] ? allMissions().find(m => m.m.id === s[2]) : null, f = s[2] ? FEATURES.find(q => q[6] === s[2]) : null, e = s[3] || {};
+  return { k, t: s[0], ico: s[1], mid: s[2], x, f, what: e.what || (x && x.m.what) || (f && f[4]) || '', where: e.where || (f && f[2]) || '', how: e.how || (f && f[3]) || (x && x.m.steps ? x.m.steps.slice(0, 2).join(' ') : ''), tip: e.tip || (f && f[7]) || '', lic: e.lic || (f && f[5]) || (x && x.L.pro ? 'P' : 'B') }; };
+
+/* ---------- 기능 조합 미션의 점검 항목 ---------- [체크리스트 문구, 판정, 방법 안내] */
+const hasB = (ed, ...t) => cbAll(ed).some(b => t.includes(b.type));
+const TASKS = {
+  env: ['배경을 다른 풍경으로 바꾸기', (ed, ev) => ev.env, '왼쪽 아래 <b>배경</b>을 눌러 풍경을 고르세요.'],
+  add3: ['라이브러리에서 오브젝트 3개 추가하기', (ed, ev) => (ev.add || 0) >= 3, '왼쪽 아래 <b>라이브러리</b>를 열고 오브젝트를 클릭하거나 끌어다 놓으세요.'],
+  move: ['오브젝트를 끌어서 옮기기', (ed, ev) => ev.moved, '오브젝트 위에서 누른 채 끌어요.'],
+  height: ['오브젝트를 위로 올리기 (높낮이)', (ed, ev) => ev.height, '오브젝트를 선택하고 초록색 <b>↕ 손잡이</b>를 누른 채 위로 끌어요.'],
+  scale: ['오브젝트 크기 바꾸기', (ed, ev) => ev.scaled, '오브젝트를 선택하고 보라색 <b>⤡ 손잡이</b>를 끌어요.'],
+  rot: ['회전 모드로 방향 돌리기', (ed, ev) => ev.rot, '오브젝트 선택 → <b>R</b> 키(또는 화면 키) → 고리를 누른 채 돌려요.'],
+  snap: ['격자 스냅을 켜고 옮기기', (ed, ev) => ev.snapMove, '<b>S</b> 키로 스냅을 켠 다음 오브젝트를 끌어 옮기세요.'],
+  dup2: ['오브젝트를 2번 복제하기', (ed, ev) => (ev.dup || 0) >= 2, '<b>Alt</b>를 누른 채 오브젝트를 끌거나, Ctrl + C → Ctrl + V.'],
+  dup5: ['오브젝트를 5번 이상 복제하기', (ed, ev) => (ev.dup || 0) >= 5, '<b>Alt + 드래그</b>를 여러 번 하거나, 여러 개를 선택해서 Ctrl + C → Ctrl + V 하면 빨라요.'],
+  group: ['여러 개를 그룹으로 묶기', (ed, ev) => ev.group, '첫 오브젝트 클릭 → <b>Shift</b> 누른 채 다른 것 클릭 → <b>G</b>.'],
+  selall: ['Ctrl + A로 모두 선택하기', (ed, ev) => ev.selAll, '<b>Ctrl</b>을 누른 채 <b>A</b>.'],
+  attach: ['장식을 다른 오브젝트에 붙이기', (ed, ev) => (ev.attach || 0) >= 1 || ed.all().some(o => o.parent), '장식을 오른쪽 클릭(패드: 길게 누르기) → <b>📎 붙이기</b> → 상대 오브젝트에 나타난 점을 클릭하세요.'],
+  attach2: ['장식 2개 이상 붙이기', (ed, ev) => ed.all().filter(o => o.parent).length >= 2, '붙일 오브젝트를 오른쪽 클릭 → <b>📎 붙이기</b> → 점 클릭. 두 번 해요.'],
+  pmove: ['붙인 뒤 큰 오브젝트(부모)를 옮겨 보기', (ed, ev) => ev.parentMove, '여러 개를 붙인 큰 오브젝트를 끌어 보세요. 붙은 것들이 같이 움직여요.'],
+  color: ['색이나 재질 바꾸기', (ed, ev) => ev.color, '오브젝트 더블 클릭 → <b>🎨 재질</b>에서 색을 고르세요.'],
+  rename: ['오브젝트 이름 바꾸기', (ed, ev) => ev.rename, '오브젝트 더블 클릭 → 맨 위 이름 칸을 눌러 새 이름을 쓰고 Enter.'],
+  say: ['캐릭터에게 말풍선 달기', ed => ed.all().some(o => o.dialog && String(o.dialog).trim()), '캐릭터 오른쪽 클릭 → <b>💬 대화</b>에 할 말을 써요.'],
+  anim: ['캐릭터 애니메이션 고르기', (ed, ev) => ev.anim, '캐릭터 오른쪽 클릭 → <b>🏃 애니메이션</b>에서 동작을 고르세요.'],
+  bgm: ['배경 음악 넣기', (ed, ev) => ev.bgm, '왼쪽 아래 <b>배경</b> → 배경 음악에서 고르세요.'],
+  image: ['이미지를 올려 장면에 놓기', (ed, ev) => ev.up || ed.byKind('imagePanel').length > 0, '왼쪽 아래 <b>업로드</b> → 이미지 탭에서 그림을 골라 넣으세요.'],
+  text: ['글자 안내판에 글 쓰기', (ed, ev) => ev.text, '<b>라이브러리</b>에서 안내판을 추가 → 더블 클릭 → 🎨 재질 → 글자 칸에 써요.'],
+  model: ['업로드 창에서 3D 모델 넣기', (ed, ev) => ev.up || ed.byKind('model').length > 0, '왼쪽 아래 <b>업로드</b> → 3D 모델 탭에서 예시 모델을 넣어요.'],
+  phys: ['오브젝트의 물리 켜기', ed => ed.all().some(o => o.physics && !o.pstat), '오브젝트 오른쪽 클릭 → <b>🪂 물리</b> → Physics 스위치를 켜세요.'],
+  pstatic: ['경사로(바닥)는 고정하기', ed => ed.all().some(o => o.physics && o.pstat), '경사로 오른쪽 클릭 → <b>🪂 물리</b> → Physics 켜기 + <b>고정하기</b> 켜기.'],
+  mass: ['공의 질량 바꾸기', ed => ed.all().some(o => o.physics && Math.abs((o.mass || 1) - 1) > .01), '공 오른쪽 클릭 → <b>🪂 물리</b> → 질량 숫자를 바꿔요(예: 5).'],
+  bounce: ['탄성 값 바꾸기', ed => ed.all().some(o => o.physics && (o.bnc || 0) >= .5), '오브젝트 오른쪽 클릭 → <b>🪂 물리</b> → 탄성을 0.5 이상으로.'],
+  hit: ['▶ 플레이해서 실제로 부딪히게 하기', (ed, ev) => (ev.collide || 0) >= 1, '오른쪽 위 <b>▶ 플레이</b>를 누르고 부딪히는지 지켜보세요. 안 부딪히면 정지하고 위치를 고쳐요.'],
+  play: ['▶ 플레이로 확인하기', (ed, ev) => ev.play, '오른쪽 위 <b>▶ 플레이</b>로 확인하고 <b>■ 정지</b>로 돌아오세요.'],
+  click: ['"클릭하면" 이벤트 블록 놓기', ed => hasB(ed, 'when_clicked'), '위쪽 <b>코드</b>를 열고 Events의 <b>"클릭하면"</b> 블록을 작업 공간에 놓으세요. 누구를 클릭할지도 골라요.'],
+  cbsay: ['이벤트 아래에 말하기 블록 붙이기', ed => hasB(ed, 'say', 'think', 'info'), '<b>코드</b> → Actions의 <b>말하기</b>(또는 정보 창) 블록을 이벤트 블록 아래에 붙이세요.'],
+  cbmove: ['이동 블록으로 움직이게 하기', ed => hasB(ed, 'forward', 'move', 'moveto'), '<b>코드</b> → Transform의 <b>앞으로 이동</b> 블록을 이벤트 블록 아래에 붙이세요.'],
+  turn: ['회전 블록 쓰기', ed => hasB(ed, 'turn'), '<b>코드</b> → Transform의 <b>회전</b> 블록을 붙이세요.'],
+  repeat: ['반복 블록 쓰기', ed => hasB(ed, 'repeat', 'forever'), '<b>코드</b> → Control의 <b>반복</b>(또는 무한 반복) 블록 안에 움직임 블록을 넣으세요.'],
+  ifelse: ['만약 / 아니면 블록 쓰기', ed => hasB(ed, 'ifelse'), '<b>코드</b> → Control의 <b>만약 / 아니면</b> 블록을 놓고 조건 칸을 채우세요.'],
+  vars: ['변수(점수) 블록 쓰기', ed => hasB(ed, 'var_set', 'var_change'), '<b>코드</b> → Data의 <b>변수 바꾸기</b> 블록을 "클릭하면" 아래에 붙이세요.'],
+  score1: ['▶ 플레이에서 점수 1점 올리기', (ed, ev) => (ev.varMax || 0) >= 1, '<b>▶ 플레이</b>를 누르고 오브젝트를 클릭해 점수가 오르는지 확인하세요.'],
+  score3: ['▶ 플레이에서 점수 3점 만들기', (ed, ev) => (ev.varMax || 0) >= 3, '<b>▶ 플레이</b>에서 3번 클릭해 점수를 3으로 만드세요.'],
+  cbdel: ['클릭하면 사라지게 하기 (삭제 블록)', ed => hasB(ed, 'del'), '<b>코드</b> → Items의 <b>삭제</b> 블록을 "클릭하면" 아래에 붙이세요.'],
+  quiz: ['퀴즈 창 블록 놓기', ed => hasB(ed, 'quiz'), '<b>코드</b> → Actions의 <b>퀴즈 창</b> 블록을 "클릭하면" 아래에 붙이고 문제와 보기를 써요.'],
+  quizrun: ['▶ 플레이에서 퀴즈 풀어 보기', (ed, ev) => ev.quiz, '<b>▶ 플레이</b> → 오브젝트 클릭 → 퀴즈의 답을 골라 보세요.'],
+  info: ['정보 창 블록 놓기', ed => hasB(ed, 'info'), '<b>코드</b> → Actions의 <b>정보 창</b> 블록을 이벤트 아래에 붙이세요.'],
+  sound: ['소리 넣기', (ed, ev) => ev.bgm || hasB(ed, 'sound'), '<b>코드</b> → Actions의 소리 재생 블록을 쓰거나, 배경 음악을 고르세요.'],
+  collide: ['"충돌하면" 이벤트 블록 놓기', ed => hasB(ed, 'when_collide'), '<b>코드</b> → Events의 <b>"충돌하면"</b> 블록을 놓고 두 오브젝트를 고르세요.'],
+  scene2: ['장면을 하나 더 만들기', ed => ed.scenes.length >= 2, '왼쪽 위 <b>장면 목록</b> → <b>＋ 새 장면 추가</b>.'],
+  goto: ['장면 이동 블록 쓰기', ed => (ed.scenes || []).some(s => JSON.stringify(s.scripts || s.data && s.data.scripts || '').includes('goto_scene')) || hasB(ed, 'goto_scene'), '첫 장면에서 <b>코드</b> → Control의 <b>장면으로 이동</b> 블록을 "클릭하면" 아래에 붙이세요.'],
+  hop: ['▶ 플레이에서 장면 넘어가기', (ed, ev) => (ev.hops || 0) >= 1, '<b>▶ 플레이</b>를 누르고 오브젝트를 클릭해 다음 장면으로 넘어가 보세요.'],
+  sphere2: ['구(공 모양) 2개 놓기', ed => ed.byKind('sphere').length + ed.byKind('ball').length >= 2, '<b>라이브러리</b> → 도형에서 구를 2개 추가하세요.']
+};
+
+/* ---------- 조합 미션용 작은 장면 ---------- */
+const MINI = {
+  empty(ed) { PRESETS.empty(ed); },
+  deco(ed) { PRESETS.empty(ed); A2(ed, 'cylinder', 0, 0, { name: '접시', s: [2.2, .25, 2.2], color: '#f4f1ea' }); A2(ed, 'sphere', 3.2, 1.5, { name: '아이스크림', color: '#ffb3c7' }); A2(ed, 'cone', 4.4, 0, { name: '콘', color: '#d9a05b' }); A2(ed, 'ornament', -3, 1.5, { name: '체리', color: '#e8435a' }); A2(ed, 'star', -4.2, 0, { name: '별 장식' }); A2(ed, 'candycane', -3.4, -1.6, { name: '사탕 지팡이' }); ed.setCamera({ target: new THREE.Vector3(0, .8, 0), dist: 13, yaw: .2, pitch: .5 }, true); },
+  ship(ed) { PRESETS.empty(ed); A2(ed, 'sled', 0, 0, { name: '배', scale: 1.4 }); A2(ed, 'santa', -3.5, 1, { name: '선원' }); A2(ed, 'star', 3, 2, { name: '깃발 장식' }); A2(ed, 'bell', 4, 0, { name: '종' }); ed.setCamera({ target: new THREE.Vector3(0, 1, 0), dist: 13, yaw: .3, pitch: .4 }, true); },
+  zoo(ed) { PRESETS.empty(ed); ed.setEnv('snowmount', true); A2(ed, 'deer', -2, 0, { name: '순록' }); A2(ed, 'penguin', 1.5, 1, { name: '펭귄' }); A2(ed, 'dog', 3.5, -1, { name: '강아지' }); A2(ed, 'fence', 0, -3, { name: '울타리' }); A2(ed, 'rock', -4, 2, { name: '바위' }); ed.setCamera({ target: new THREE.Vector3(0, 1, 0), dist: 15, yaw: .2, pitch: .45 }, true); },
+  chars(ed) { PRESETS.empty(ed); A2(ed, 'santa', -2, 0, { name: '안내원' }); A2(ed, 'elf', 1, 1, { name: '요정' }); A2(ed, 'kid', 3, -1, { name: '어린이' }); A2(ed, 'gift', 0, 3, { name: '보물 상자' }); ed.setCamera({ target: new THREE.Vector3(0, 1, 0), dist: 13, yaw: .2, pitch: .42 }, true); },
+  hunt(ed) { PRESETS.empty(ed); A2(ed, 'santa', 0, 4, { name: '플레이어' }); [[-3, 0], [0, -1], [3, 0]].forEach((p, i) => A2(ed, 'snowman', p[0], p[1], { name: '표적 ' + (i + 1) })); ed.setCamera({ target: new THREE.Vector3(0, 1, 0), dist: 14, yaw: 0, pitch: .5 }, true); },
+  lane(ed) { PRESETS.empty(ed); A2(ed, 'ramp', -4, 0, { name: '경사로' }); A2(ed, 'ball', -5.6, 0, { name: '공', y: 3.2 }); [[-.4, 0], [.5, -.5], [.5, .5]].forEach((p, i) => A2(ed, 'domino', p[0], p[1], { name: '핀 ' + (i + 1), physics: true, mass: .4 })); ed.setCamera({ target: new THREE.Vector3(-2, 1, 0), dist: 13, yaw: 0, pitch: .42 }, true); },
+  wall(ed) { PRESETS.empty(ed); A2(ed, 'wall', 0, -2, { name: '전시 벽' }); A2(ed, 'kid', 3, 2, { name: '관람객' }); ed.setCamera({ target: new THREE.Vector3(0, 1.5, 0), dist: 12, yaw: 0, pitch: .3 }, true); },
+  cube(ed) { PRESETS.empty(ed); A2(ed, 'cube', 0, 0, { name: '큐브', scale: 2.2, color: '#8fdcff' }); A2(ed, 'pine', 4, 0, { name: '나무' }); A2(ed, 'gift', 4, 2, { name: '보물' }); A2(ed, 'rock', -4, 1, { name: '바위' }); A2(ed, 'kid', -4, -1.5, { name: '탐험가' }); ed.setCamera({ target: new THREE.Vector3(0, 1.4, 0), dist: 14, yaw: .4, pitch: .45 }, true); },
+  space(ed) { PRESETS.empty(ed); A2(ed, 'sphere', 0, 0, { name: '태양', scale: 2, color: '#ffc531', y: 1 }); A2(ed, 'sphere', 5, 0, { name: '행성', scale: .8, color: '#3d7dd8', y: 1.6 }); ed.setCamera({ target: new THREE.Vector3(0, 1.5, 0), dist: 15, yaw: .2, pitch: .5 }, true); },
+  track(ed) { PRESETS.empty(ed); A2(ed, 'cuboid', -3, 0, { name: '트랙 조각', color: '#c98a4b' }); A2(ed, 'sled', -3, 3, { name: '카트' }); A2(ed, 'kid', 2, 3, { name: '탑승객' }); ed.setCamera({ target: new THREE.Vector3(0, 1, 1), dist: 14, yaw: .2, pitch: .45 }, true); }
+};
+
+/* ---------- 24개 프로젝트 ---------- (제작 순서는 수업 PPT의 학습 목표 순서를 따르고, 설명은 새로 썼다) */
+const PKIND = { d: ['3D 꾸미기', 'tag-basic'], g: ['게임 코딩', 'tag-challenge'], m: ['머지 큐브', 'tag-must'], v: ['VR 체험', 'tag-account'] };
+const PROJECTS = [
+  { n: 1, t: '봄, 여름, 가을, 겨울', ico: '🌸', k: 'd', tpl: 'RSR-VDT', fin: 'EPL-NYT', intro: '사이트에 접속해 학생 계정으로 들어가고, 빈 프로젝트에 계절마다 다른 장면을 만들어 보면서 편집 화면과 마우스 조작을 익혀요.',
+    steps: [['사이트 접속하기', '주소창에 사이트 주소를 입력해 들어가요.'], ['가입 · 로그인하기', '선생님이 알려 준 학급 코드로 학생 계정을 만들거나 로그인해요.'], ['갤러리 체험하기', '공개 작품을 실행해 보며 어떤 것을 만들 수 있는지 살펴봐요.'], ['새 코스페이스 만들기', '코스페이스 → + 만들기 → 3D 환경을 골라요.'], ['편집 화면 조작하기', '빈 곳 드래그로 돌리고, Space + 드래그로 옮기고, 휠로 확대해요.'], ['배경 바꾸기', '왼쪽 아래 배경에서 계절에 어울리는 풍경을 골라요.'], ['오브젝트 배치하기', '라이브러리에서 계절에 맞는 오브젝트를 끌어다 놓아요.'], ['장면 추가하기', '왼쪽 위 장면 목록에서 새 장면을 만들어 다음 계절을 꾸며요.'], ['저장하고 이름 붙이기', '작품 이름을 바꿔요. 편집 내용은 자동 저장돼요.'], ['자유롭게 꾸미기', '네 계절을 내 생각대로 더 꾸며요.']],
+    sk: ['signup', 'gallery', 'cam', 'zoom', 'pan', 'env', 'lib', 'dragadd', 'scene', 'play'], mini: { t: '미니 사계절', d: '배경을 바꾸고 오브젝트를 놓은 다음, 장면을 하나 더 만들어 두 계절을 표현해요.', pre: 'empty', tasks: ['env', 'add3', 'move', 'scene2', 'play'] }, ext: ['계절마다 배경 음악을 다르게 넣기', '계절을 설명하는 캐릭터와 말풍선 추가하기', '장면 이름을 봄·여름·가을·겨울로 바꾸기'] },
+  { n: 2, t: '디저트 만들기', ico: '🍰', k: 'd', tpl: 'BGY-DUP', fin: 'ZLX-RGM', intro: '오브젝트를 이동·회전하고, 위로 올리고, 크기를 바꾸는 방법을 자세히 익힌 뒤 여러 기능을 조합해 나만의 디저트를 만들어요.',
+    steps: [['오브젝트의 팝업 메뉴 살펴보기', '오브젝트를 클릭하면 나타나는 작은 버튼(회전·이동·높이·크기)을 확인해요.'], ['회전 모드 살펴보기', '회전 버튼을 누르고 색깔 고리를 끌어 방향을 돌려요.'], ['이동 모드 살펴보기', '이동 버튼을 누르고 화살표를 끌어 한 방향으로만 옮겨요.'], ['드래그해서 올리기', '높이 손잡이를 위로 끌어 접시 위에 재료를 올려요.'], ['드래그해서 크기 바꾸기', '크기 손잡이를 끌어 재료 크기를 맞춰요.'], ['격자에 맞추기', '격자 스냅을 켜면 재료가 칸에 딱딱 맞아요.'], ['아이템에 붙이기', '장식을 오른쪽 클릭 → 붙이기로 디저트에 고정해요.'], ['오브젝트 복제하기', 'Alt + 드래그로 같은 장식을 여러 개 만들어요.'], ['자유롭게 꾸미기', '색과 장식을 바꿔 세상에 하나뿐인 디저트로 만들어요.']],
+    sk: ['search', 'select', 'move', 'rotate', 'height', 'scale', 'snap', 'dup', 'attach', 'attach2'], mini: { t: '미니 디저트', d: '접시 위에 아이스크림을 올리고, 크기와 방향을 맞추고, 체리를 복제해 붙여 작은 디저트를 완성해요.', pre: 'deco', tasks: ['move', 'height', 'scale', 'rot', 'snap', 'dup2', 'attach'] }, ext: ['층을 3단으로 쌓기', '재료 색을 바꿔 다른 맛 표현하기', '디저트 가게 간판 만들기'] },
+  { n: 3, t: '해상 전투', ico: '⛵', k: 'd', tpl: 'XFF-WQE', fin: 'ADP-NUJ', intro: '오브젝트의 여러 속성(이름, 코드 사용, 말하기, 물리, 애니메이션, 색)을 살펴보고, 이 기능들로 해상 전투 장면을 만들어요.',
+    steps: [['오브젝트의 검은색 팝업창 살펴보기', '오브젝트를 더블 클릭(또는 오른쪽 클릭)하면 속성창이 열려요.'], ['오브젝트 이름 바꾸기', '속성창 맨 위 이름을 눌러 알아보기 쉬운 이름으로 바꿔요.'], ['속성창의 코드 버튼 살펴보기', '코블록스에서 사용을 켜야 코드에서 이 오브젝트를 쓸 수 있어요.'], ['말풍선 만들기', '대화 메뉴에서 말하기·생각하기를 골라 글을 써요.'], ['속성창의 물리 버튼 살펴보기', '물리를 켜면 중력을 받아 떨어지고 부딪혀요.'], ['속성창의 이동 버튼 살펴보기', '위치·회전·크기를 숫자로 정확하게 맞춰요.'], ['애니메이션 바꾸기', '캐릭터의 동작을 골라요.'], ['색상 바꾸기', '재질 메뉴에서 배와 깃발 색을 바꿔요.'], ['다른 오브젝트에 붙이기', '선원을 배에 붙이면 배가 움직일 때 함께 움직여요.']],
+    sk: ['insp', 'rename', 'usecode', 'say', 'think', 'phys', 'numpos', 'anim', 'color', 'equip', 'click', 'cbmove'], mini: { t: '미니 항해 장면', d: '선원에게 이름과 인사말을 주고, 배를 꾸민 다음, 코드로 배가 앞으로 나아가게 해요.', pre: 'ship', tasks: ['rename', 'say', 'anim', 'color', 'attach', 'cbmove', 'play'] }, ext: ['상대편 배와 선원 추가하기', '선원을 클릭하면 대사가 바뀌게 하기', '배경 음악으로 긴장감 주기'] },
+  { n: 4, t: '동물원 꾸미기', ico: '🦁', k: 'd', tpl: 'BHL-TDV', fin: 'MHV-UUM', intro: '지금까지 배운 기능으로 동물들이 자연스럽게 지내는 동물원을 꾸미고, 배경 음악으로 분위기를 살려요.',
+    steps: [['자연스러운 동물 추가하기', '동물을 놓고 애니메이션을 골라 살아 있는 것처럼 보이게 해요.'], ['동물 물 그릇 만들기', '도형을 조합하고 색을 바꿔 물 그릇을 만들어요.'], ['배경 음악 넣기', '배경 메뉴에서 어울리는 음악을 골라요.']],
+    sk: ['lib', 'anim', 'move', 'rotate', 'scale', 'dup', 'blocks', 'color', 'bgm'], mini: { t: '미니 동물 우리', d: '동물에게 동작을 주고, 같은 동물을 복제하고, 색을 바꾸고, 음악을 넣어 작은 우리를 만들어요.', pre: 'zoo', tasks: ['anim', 'dup2', 'rot', 'color', 'bgm', 'play'] }, ext: ['동물마다 안내판 세우기', '사육사 캐릭터가 동물을 소개하게 하기', '울타리를 복제해 우리 완성하기'] },
+  { n: 5, t: '바다 꾸미기', ico: '🐠', k: 'd', tpl: 'UAN-QRM', fin: 'DTS-FUN', intro: '오브젝트를 한꺼번에 많이 복제하는 방법으로 1,000마리 정어리 떼를 만들고, 카메라 설정을 바꿔 바닷속을 헤엄쳐요.',
+    steps: [['바다 동물 추가하기', '여러 바다 동물을 놓고 헤엄치는 애니메이션을 골라요.'], ['정어리 떼 1,000마리 만들기', '1마리 → 여러 마리 선택 → 복사·붙여넣기를 반복하면 수가 빠르게 늘어요.'], ['헤엄치는 카메라 만들기', '카메라 이동 방식을 날기로 바꿔 바닷속을 자유롭게 다녀요.']],
+    sk: ['lib', 'anim', 'dup', 'multi', 'selall', 'copy', 'group', 'camset'], mini: { t: '미니 물고기 떼', d: '하나를 복제해 둘로, 둘을 함께 복제해 넷으로… 수를 빠르게 늘리고 그룹으로 묶어요.', pre: 'zoo', tasks: ['dup5', 'selall', 'group', 'anim', 'play'] }, ext: ['떼마다 크기를 다르게 하기', '산호와 바위로 바닥 꾸미기', '바닷속 느낌의 필터 고르기'] },
+  { n: 6, t: '미술관 전시회', ico: '🖼️', k: 'd', tpl: 'RBC-DBF', fin: 'CUL-VVL', intro: '웹 검색으로 그림을 가져와 벽에 걸고, 움직이는 GIF와 작품 이름표를 더해 나만의 전시회를 열어요.',
+    steps: [['이미지 웹 검색하기', '업로드 → 이미지 → 웹 검색으로 그림을 찾아 장면에 놓아요.'], ['움직이는 GIF 이미지 추가하기', 'GIF 파일을 올려 움직이는 작품을 걸어요.'], ['작품 이름표 만들기', '글자 오브젝트로 작품 제목과 작가를 써 붙여요.']],
+    sk: ['websearch', 'image', 'gif', 'sign', 'move', 'rotate', 'scale', 'height', 'copyright'], mini: { t: '미니 전시 벽', d: '벽에 그림을 걸고 크기와 방향을 맞춘 다음 이름표를 달아요.', pre: 'wall', tasks: ['image', 'scale', 'height', 'text', 'play'] }, ext: ['전시 주제를 정해 3점 이상 걸기', '안내원 캐릭터가 작품을 설명하게 하기', '조명과 벤치로 전시장 꾸미기'] },
+  { n: 7, t: '포켓몬 숨바꼭질', ico: '🫣', k: 'd', tpl: 'DNF-SXK', fin: 'YTX-HLW', intro: '틴커캐드에서 3D 모델을 내려받아 작품에 올리고, 장면 곳곳에 숨겨 숨바꼭질 놀이터를 만들어요.',
+    steps: [['틴커캐드 가입하기', '틴커캐드 사이트에 학생 계정으로 들어가요.'], ['3D 모델 찾아 내려받기', '갤러리에서 모델을 찾아 파일로 내보내요.'], ['3D 모델 업로드하기', '업로드 → 3D 모델에 파일을 올리고 장면에 놓아요.']],
+    sk: ['tinker', 'upload3d', 'copyright', 'move', 'scale', 'rotate', 'height', 'cam'], mini: { t: '미니 숨바꼭질', d: '업로드 창에서 모델을 넣고, 크기를 줄이고 방향을 돌려 다른 오브젝트 뒤에 숨겨요.', pre: 'zoo', tasks: ['model', 'scale', 'rot', 'move', 'play'] }, ext: ['숨긴 개수를 알려 주는 안내판 세우기', '찾으면 클릭해서 말하게 하기', '직접 만든 모델 올리기'] },
+  { n: 8, t: '자연재해 체험장', ico: '🌋', k: 'd', tpl: 'YAE-XYT', fin: 'MUM-MCY', intro: '연기·불·물 같은 특수 효과 오브젝트로 화재, 홍수, 지진, 가뭄을 실감 나게 표현하는 체험장을 만들어요.',
+    steps: [['화재 체험장 만들기', '불과 연기 효과를 건물에 놓고 대피 안내를 넣어요.'], ['홍수 체험장 만들기', '물 효과와 높이 조절로 물에 잠긴 모습을 표현해요.'], ['지진 체험장 만들기', '기울어진 건물과 흩어진 물건으로 지진을 표현해요.'], ['가뭄 체험장 만들기', '배경과 바닥을 바꿔 메마른 땅을 표현해요.']],
+    sk: ['fx', 'lib', 'env', 'ground', 'rotate3', 'height', 'say', 'scene', 'scenename'], mini: { t: '미니 안전 체험장', d: '장면 두 개에 서로 다른 재해를 표현하고, 안내원이 대피 방법을 말하게 해요.', pre: 'chars', tasks: ['env', 'rot', 'say', 'scene2', 'play'] }, ext: ['재해마다 행동 요령 안내판 세우기', '경보음 소리 넣기', '안전한 장소로 가는 화살표 만들기'] },
+  { n: 9, t: '파쿠르 점프 맵 게임', ico: '🏃', k: 'g', tpl: 'GPD-MHX', fin: 'KHS-CQN', intro: '발판을 밟고 뛰어 도착 지점까지 가는 점프 맵 게임을 만들어요. 바닥에 떨어지면 다시 시작하고, 도착하면 다음 레벨로 가요.',
+    steps: [['시작할 때 사용법과 이야기 설명하기', '플레이를 누르면 정보 창으로 조작법과 이야기를 알려 줘요.'], ['도착 지점에 닿으면 클리어 안내 후 레벨 이동', '플레이어가 도착 지점과 충돌하면 안내를 띄우고 다음 장면으로 가요.'], ['바닥에 닿으면 게임 오버 안내 후 다시 시작', '바닥과 충돌하면 안내를 띄우고 같은 장면을 다시 시작해요.'], ['꾸미기 (디자인)', '발판 색과 배치를 바꿔 나만의 맵을 만들어요.']],
+    sk: ['blocks', 'color', 'phys', 'pstatic', 'camset', 'info', 'collide', 'scene', 'goto'], mini: { t: '미니 도착 판정', d: '공이 굴러가 도착 지점에 닿으면 안내가 나오게 해요. 발판은 고정하고, 공에는 물리를 켜요.', pre: 'lane', tasks: ['phys', 'pstatic', 'collide', 'cbsay', 'hit'] }, ext: ['레벨을 3개로 늘리기', '움직이는 발판 만들기', '걸린 시간 표시하기'] },
+  { n: 10, t: '방탈출 퀴즈 게임', ico: '🚪', k: 'g', tpl: 'GGL-NPQ', fin: 'ZFQ-STR', intro: '퀴즈 창으로 객관식 문제 3개를 내고, 정답을 맞히면 닫힌 문이 열려 방에서 탈출하는 게임을 만들어요.',
+    steps: [['이미지 팝업창으로 게임 소개하기', '시작할 때 정보 창에 그림과 글로 게임을 설명해요.'], ['퀴즈 창으로 난센스 퀴즈 만들기', '오브젝트를 클릭하면 문제와 보기가 나오게 해요.'], ['정답이면 방문 열어 주기', '정답 칸에 문이 움직이는(열리는) 블록을 넣어요.'], ['코드 복제하기', '완성한 코드를 복사해 두 번째, 세 번째 문에 붙여 넣고 내용만 바꿔요.']],
+    sk: ['info', 'click', 'quiz', 'ifelse', 'cbmove', 'cbanim', 'copy', 'goto'], mini: { t: '미니 퀴즈 문', d: '오브젝트를 클릭하면 퀴즈가 나오고, 정답이면 문(상자)이 움직이고 오답이면 힌트가 나오게 해요.', pre: 'chars', tasks: ['click', 'quiz', 'cbmove', 'cbsay', 'quizrun'] }, ext: ['문제를 5개로 늘리기', '틀리면 처음으로 돌아가게 하기', '탈출 성공 장면 만들기'] },
+  { n: 11, t: '보물 찾기 게임', ico: '💎', k: 'g', tpl: 'NYL-BSX', fin: 'MQZ-XVA', intro: '맵에 숨겨진 보물 3개를 찾는 게임이에요. 찾을 때마다 변수를 1씩 올리고, 3개를 모두 찾으면 엔딩 장면으로 넘어가요.',
+    steps: [['캐릭터로 게임 소개하기', '안내 캐릭터가 말풍선으로 규칙을 알려 줘요.'], ['보물을 클릭하면 팝업창 나타내기', '보물을 클릭하면 찾았다는 안내가 나오고 변수가 1 올라가요.'], ['보물을 다 찾으면 엔딩 장면으로 이동하기', '변수가 3이 되면 장면으로 이동 블록을 실행해요.'], ['환경 꾸미고 보물 숨기기', '나무와 바위 뒤에 보물을 숨겨요.']],
+    sk: ['cbsay', 'click', 'info', 'vars', 'varif', 'ifelse', 'scene', 'goto', 'move'], mini: { t: '미니 보물 세기', d: '보물을 클릭할 때마다 점수가 1 오르고, 3점이 되면 축하 말이 나오게 해요.', pre: 'hunt', tasks: ['click', 'vars', 'ifelse', 'cbsay', 'score3'] }, ext: ['보물 개수를 5개로 늘리기', '찾은 개수를 화면에 표시하기', '가짜 보물(함정) 넣기'] },
+  { n: 12, t: '숨은 그림 찾기 게임', ico: '🔎', k: 'g', tpl: 'YVC-XPY', fin: 'JYT-TPY', intro: '주변을 둘러싼 360도 이미지 속에 숨은 오브젝트를 찾아 클릭하는 게임이에요. 찾으면 다음 장면으로 넘어가 새 문제를 풀어요.',
+    steps: [['360도 이미지 장면 만들기', '장면 종류를 360도 이미지로 만들고 배경 사진을 넣어요.'], ['찾을 오브젝트 숨기기', '오브젝트를 사진 속에 자연스럽게 배치해요.'], ['클릭하면 찾았다는 안내 띄우기', '클릭 이벤트로 정보 창을 보여 줘요.'], ['다음 장면으로 넘어가기', '안내 뒤에 장면으로 이동 블록으로 다음 문제로 가요.'], ['엔딩 메시지 만들기', '마지막 장면에서 축하 메시지를 보여 줘요.']],
+    sk: ['env360', 'scene', 'scenename', 'move', 'scale', 'click', 'info', 'goto', 'copyright'], mini: { t: '미니 숨은 그림', d: '장면 두 개를 만들고, 숨긴 오브젝트를 클릭하면 안내가 나온 뒤 다음 장면으로 넘어가게 해요.', pre: 'chars', tasks: ['scene2', 'click', 'cbsay', 'goto', 'hop'] }, ext: ['문제를 3개 이상 만들기', '틀린 곳을 클릭하면 힌트 주기', '직접 찍은 360도 사진 쓰기'] },
+  { n: 13, t: '100마리 늑대 잡기 게임', ico: '🐺', k: 'g', tpl: 'KEF-HCL', fin: 'EMW-PMA', intro: '늑대를 100마리 복제해 맵에 뿌리고, 총알을 쏴서 잡는 게임이에요. 잡은 수와 남은 수를 화면에 보여 주고, 모두 잡으면 클리어해요.',
+    steps: [['총과 점수판 만들기', '카메라에 총과 글자 오브젝트를 붙여 화면에 늘 보이게 해요.'], ['총알 발사하기', '클릭하면 총알 복제본이 앞으로 날아가게 해요.'], ['늑대 100마리 복제하기', '반복과 복제 블록으로 늑대를 무작위 위치에 만들어요.'], ['늑대가 총알에 맞으면 죽는 효과 만들기', '충돌 이벤트로 늑대를 삭제하고 점수를 올려요.'], ['남은 늑대 수를 화면에 표시하기', '변수를 글자 오브젝트에 보여 줘요.'], ['100마리를 잡으면 게임 클리어하기', '변수가 100이 되면 클리어 안내를 띄워요.']],
+    sk: ['dup', 'clone', 'click', 'collide', 'cbmove', 'cbdel', 'vars', 'varif', 'timer', 'random'], mini: { t: '미니 표적 잡기', d: '표적을 클릭하면 사라지고 점수가 1점씩 올라가는 간단한 시스템을 만들어요.', pre: 'hunt', tasks: ['click', 'cbdel', 'vars', 'play', 'score1'] }, ext: ['제한 시간 넣기', '늑대가 다가오게 하기', '맞히면 소리 나게 하기'] },
+  { n: 14, t: '볼링 게임', ico: '🎳', k: 'g', tpl: 'KSL-YDA', fin: 'KXA-LRG', intro: '물리 엔진으로 볼링공을 굴려 핀 10개를 쓰러뜨리는 게임이에요. 키보드로 공의 위치, 던지는 속도, 회전을 조절해요.',
+    steps: [['재질로 볼링장 꾸미기', '레인과 벽의 재질을 바꾸고 핀과 공에 물리를 켜요.'], ['스페이스 키를 눌러 공 굴리기', '스페이스 키 이벤트에서 공을 앞으로 미는 블록을 실행해요.'], ['A, D 키로 공 위치 바꾸기', '키 이벤트로 공을 좌우로 조금씩 옮겨요.'], ['W, S 키로 던지는 속도 바꾸기', '속도 변수를 만들어 키로 올리고 내려요.'], ['Q, E 키로 공에 회전 주기', '회전 방향 변수를 바꿔 공이 휘게 해요.'], ['카메라가 공 따라가기', '공이 굴러갈 때 카메라가 같이 이동하게 해요.']],
+    sk: ['color', 'phys', 'mass', 'friction', 'bounce', 'pstatic', 'physcol', 'push', 'keyev', 'vars', 'camfollow'], mini: { t: '미니 볼링 실험', d: '경사면 위에서 공을 굴려 핀과 충돌시키는 간단한 물리 실험이에요. 경사로는 고정하고, 공의 질량을 바꿔 봐요.', pre: 'lane', tasks: ['phys', 'pstatic', 'mass', 'play', 'hit'] }, ext: ['점수판 만들기', '핀 배치를 바꿔 난이도 조절하기', '나만의 볼링장 꾸미기'] },
+  { n: 15, t: '무한 달리기 게임', ico: '🏃‍♂️', k: 'g', tpl: 'YNN-DMS', fin: 'UFV-YGH', intro: '자동으로 앞으로 달리는 캐릭터를 좌우로 움직여 절벽에서 떨어지지 않고 도착 지점까지 가는 3인칭 게임이에요.',
+    steps: [['캐릭터 발판 만들기', '캐릭터가 설 납작한 발판을 만들고 물리를 켜요.'], ['발판에 캐릭터와 카메라 붙이기', '발판에 붙이면 발판만 움직여도 모두 함께 가요.'], ['도착 지점에 도착하면 게임 클리어', '도착 지점과 충돌하면 클리어 안내를 띄워요.'], ['절벽에서 떨어지면 게임 오버', '아래 바닥과 충돌하면 게임 오버 안내 후 다시 시작해요.'], ['오브젝트 복제해서 절벽 만들기', '절벽 조각을 복제해 길을 이어요.'], ['전체 절벽 완성하기', '폭과 간격을 바꿔 난이도를 조절해요.']],
+    sk: ['blocks', 'equip', 'parent', 'camfollow', 'phys', 'pstatic', 'collide', 'repeat', 'cbmove', 'keyev', 'dup', 'goto'], mini: { t: '미니 달리기 발판', d: '발판에 캐릭터를 붙이고, 발판이 계속 앞으로 가게 한 다음, 길 조각을 복제해요.', pre: 'track', tasks: ['attach', 'pmove', 'dup2', 'cbmove', 'repeat', 'play'] }, ext: ['장애물 추가하기', '달리는 속도 점점 빠르게 하기', '코인 모으기 넣기'] },
+  { n: 16, t: '운석 피하기 자동차 게임', ico: '☄️', k: 'g', tpl: 'FRG-ZWL', fin: 'AAE-VTH', intro: '하늘에서 떨어지는 운석을 피해 자동차를 몰고 대피 장소까지 가는 게임이에요. 매개변수가 있는 함수로 운석과 그림자를 함께 복제해요.',
+    steps: [['3인칭 자동차 움직이기', '자동차에 카메라를 붙이고 키보드로 운전해요.'], ['게임 시작하고 끝내기', '시작 안내와 도착·충돌 판정을 만들어요.'], ['떨어지는 운석과 그림자 만들기', '함수로 운석과 그림자를 같은 자리에 복제해 떨어뜨려요.'], ['경기장 트랙 완성하기', '벽과 장애물에 물리를 켜서 통과하지 못하게 해요.']],
+    sk: ['camfollow', 'keyev', 'phys', 'bounce', 'pstatic', 'collide', 'clone', 'func', 'random', 'info'], mini: { t: '미니 운석 낙하', d: '공(운석)에 물리와 탄성을 주고 높은 곳에서 떨어뜨려, 닿으면 안내가 나오게 해요.', pre: 'lane', tasks: ['phys', 'bounce', 'collide', 'cbsay', 'hit'] }, ext: ['운석 개수 늘리기', '부딪히면 속도가 느려지게 하기', '대피 장소를 꾸미기'] },
+  { n: 17, t: '머지 큐브 보물섬', ico: '🏝️', k: 'm', tpl: 'MMD-PVG', fin: 'KLX-PCK', prep: '머지 큐브 모형과 스마트폰(와이파이 또는 데이터)이 필요해요.', intro: '머지 큐브 위에 바다와 섬을 꾸며 홀로그램 보물섬을 만들고, 스마트폰 앱으로 감상해요.',
+    steps: [['간단한 머지 큐브 작품 만들기', '새 코스페이스를 머지 큐브 종류로 만들고 오브젝트를 올려 봐요.'], ['스마트폰에서 작품 실행하기', '앱에서 작품을 열고 큐브를 비춰 확인해요.'], ['머지 큐브 속성창 다루기', '큐브 색과 투명도를 바꿔 바다처럼 보이게 해요.'], ['머지 큐브 안에 보물 꾸미기', '큐브 위에는 섬을, 안에는 보물을 넣어요.']],
+    sk: ['merge', 'phone', 'mergeprop', 'lib', 'move', 'height', 'scale', 'attach', 'color'], mini: { t: '미니 큐브 섬', d: '큰 상자를 큐브라고 생각하고, 그 위에 나무와 보물을 올리고 붙여 작은 섬을 만들어요.', pre: 'cube', tasks: ['height', 'scale', 'attach2', 'color', 'pmove'] }, ext: ['큐브의 여섯 면을 모두 꾸미기', '해적 캐릭터 추가하기', '보물 위치 힌트 쓰기'] },
+  { n: 18, t: '머지 큐브 수수께끼', ico: '🧩', k: 'm', tpl: 'FZX-FBF', fin: 'QZQ-VRR', prep: '머지 큐브 모형과 스마트폰이 필요해요. 코딩 없이 만들어요.', intro: '큐브 앞면에는 수수께끼 힌트를, 뒷면에는 정답을 넣어요. 큐브를 돌려 정답을 확인하는 문제 게임을 코딩 없이 만들어요.',
+    steps: [['정답 주제 정하기', '속담, 영화, 난센스 가운데 문제를 정해요.'], ['오브젝트로 정답 설명하기', '캐릭터와 소품의 크기·위치·회전을 맞춰 상황을 표현해요.'], ['색과 애니메이션, 말풍선 넣기', '재질·애니메이션·대화 메뉴로 장면을 살려요.'], ['앞면에 힌트, 뒷면에 정답 쓰기', '글자 오브젝트로 주제와 글자 수, 정답을 써요.']],
+    sk: ['merge', 'phone', 'lib', 'scale', 'rotate', 'color', 'anim', 'say', 'sign'], mini: { t: '미니 수수께끼 장면', d: '캐릭터에 동작과 말풍선을 주고, 색을 바꾸고, 글자로 힌트를 써서 문제 장면을 만들어요.', pre: 'chars', tasks: ['anim', 'say', 'color', 'rot', 'text'] }, ext: ['친구와 문제 바꿔 풀기', '면마다 다른 문제 넣기', '힌트를 단계별로 주기'] },
+  { n: 19, t: '머지 큐브 디펜스 게임', ico: '🏰', k: 'm', tpl: 'KBV-QSP', fin: 'GWQ-ZPW', prep: '머지 큐브 모형과 스마트폰이 필요해요.', intro: '큐브 안의 성을 지키는 게임이에요. 여기저기서 나타나 성으로 달려오는 몬스터를 클릭해 없애고, 성에 닿으면 체력이 1씩 줄어 0이 되면 게임 오버예요.',
+    steps: [['성과 몬스터 배치하기', '큐브 가운데 성을 두고 몬스터 원본을 만들어요.'], ['몬스터가 성으로 달려오게 하기', '무작위 위치에 복제하고 성 쪽으로 이동시켜요.'], ['몬스터를 클릭하면 없애기', '클릭 이벤트로 삭제해요. 스마트폰에서는 조준점을 맞추고 터치해요.'], ['성에 닿으면 체력 줄이기', '충돌하면 체력 변수를 1 줄여요.'], ['체력이 0이면 게임 오버', '조건문으로 게임 오버 안내를 띄워요.']],
+    sk: ['merge', 'phone', 'click', 'cbmove', 'cbdel', 'clone', 'random', 'collide', 'vars', 'varif'], mini: { t: '미니 성 지키기', d: '표적을 클릭하면 사라지고 점수가 오르게 하고, 조건문으로 점수에 따라 다른 말을 하게 해요.', pre: 'hunt', tasks: ['click', 'cbdel', 'vars', 'ifelse', 'score1'] }, ext: ['몬스터 속도를 점점 빠르게 하기', '성과 몬스터를 다른 모양으로 바꾸기', '남은 체력 표시하기'] },
+  { n: 20, t: '머지 큐브 태양계', ico: '🪐', k: 'm', tpl: 'TSY-KBQ', fin: 'PQG-MNW', prep: '머지 큐브 모형과 스마트폰이 필요해요.', intro: '태양과 행성 8개를 큐브 위에 놓고, 크기와 공전 주기를 실제 값에 맞춰 보정해 홀로그램 태양계를 만들어요.',
+    steps: [['태양과 행성 배치하기', '구를 놓고 색과 재질을 바꿔 태양과 행성을 만들어요.'], ['행성 크기 보정하기', '실제 크기 비율을 참고하되 잘 보이도록 조절해요.'], ['행성 공전시키기', '행성을 중심 오브젝트에 붙이고 부모를 계속 회전시켜요.'], ['공전 주기 계산해 속도 정하기', '지구 1년(365일)을 기준으로 다른 행성이 한 바퀴 도는 시간을 정해요.']],
+    sk: ['merge', 'blocks', 'scale', 'color', 'attach', 'parent', 'orbit', 'repeat', 'parallel', 'vars'], mini: { t: '미니 공전', d: '태양과 행성 하나를 놓고, 행성을 태양에 붙인 다음 태양을 계속 회전시켜 행성이 둘레를 돌게 해요.', pre: 'space', tasks: ['scale', 'color', 'attach', 'turn', 'repeat', 'play'] }, ext: ['행성을 3개로 늘려 속도 다르게 하기', '지구에 달 붙이기', '행성 이름표 달기'] },
+  { n: 21, t: 'VR 상어 체험', ico: '🦈', k: 'v', tpl: 'RZY-AYK', fin: 'RFU-SMJ', prep: 'VR로 보려면 스마트폰과 카드보드가 필요해요. PC에서도 실행돼요.', intro: '바닷속을 헤엄치는 상어가 되어 물고기를 잡아먹는 작품이에요. 바라보는 방향으로 계속 나아가므로 고개만 돌려 조종해요.',
+    steps: [['상어를 카메라에 붙이기', '카메라 앞에 상어를 놓고 카메라에 붙여 1인칭으로 만들어요.'], ['시작하면 게임 설명하기', '정보 창으로 방법을 알려 줘요.'], ['바라보는 방향으로 계속 전진하기', '무한 반복 안에서 카메라가 앞으로 이동해요.'], ['물고기에 닿으면 잡아먹고 점수 올리기', '충돌하면 물고기를 삭제하고 변수를 올려요.'], ['3마리를 잡아먹으면 게임 끝내기', '변수가 3이 되면 끝 안내를 띄워요.']],
+    sk: ['vr', 'equip', 'camfollow', 'info', 'repeat', 'cbmove', 'collide', 'cbdel', 'vars', 'varif'], mini: { t: '미니 먹이 사냥', d: '캐릭터에 장식을 붙이고, 반복으로 계속 전진하게 하고, 점수를 세는 코드를 만들어요.', pre: 'hunt', tasks: ['attach', 'cbmove', 'repeat', 'vars', 'play'] }, ext: ['물고기 수 늘리기', '위험한 해파리 넣기', '바닷속 배경 음악 넣기'] },
+  { n: 22, t: 'VR 틀린 그림 찾기', ico: '🕵️', k: 'v', tpl: 'QBZ-QDK', fin: 'UUQ-SUD', prep: 'VR로 보려면 터치가 되는 카드보드 2.0이 필요해요.', intro: '360도 공간에 같은 그림 500개와 틀린 그림 5개를 흩어 놓고, 틀린 그림을 찾아 클릭하는 게임이에요.',
+    steps: [['같은 그림, 틀린 그림 정하기', '비슷하지만 다른 두 오브젝트(또는 이미지)를 골라요.'], ['같은 그림 500개 복제하기', '복사·붙여넣기를 거듭해 빠르게 늘리고 공간에 흩어 놓아요.'], ['틀린 그림 5개 복제하기', '틀린 그림을 사이사이에 숨겨요.'], ['같은 그림을 클릭하면 삭제하기', '클릭 이벤트로 지워서 찾기 쉽게 해요.'], ['틀린 그림을 찾으면 점수 올리기', '클릭하면 변수를 1 올려요.'], ['5개를 다 찾으면 게임 끝내기', '변수가 5가 되면 끝 안내를 띄워요.']],
+    sk: ['env360', 'dup', 'multi', 'copy', 'click', 'cbdel', 'vars', 'varif', 'vr'], mini: { t: '미니 틀린 그림', d: '표적을 여러 번 복제하고, 클릭하면 사라지면서 점수가 오르게 해요.', pre: 'hunt', tasks: ['dup5', 'click', 'cbdel', 'vars', 'score1'] }, ext: ['제한 시간 넣기', '틀린 그림을 색만 살짝 다르게 하기', '찾은 개수 표시하기'] },
+  { n: 23, t: 'VR 공룡 탐험', ico: '🦕', k: 'v', tpl: 'JAB-ENL', fin: 'GJU-HCS', prep: 'VR로 보려면 터치가 되는 카드보드 2.0이 필요해요.', intro: '여러 공룡이 함께 사는 장면을 꾸미고 VR로 탐험해요. 바닥의 지점을 클릭하면 그 자리로 이동하고, 공룡을 클릭하면 반응해요.',
+    steps: [['지점을 클릭해서 이동하기', '바닥의 지점 오브젝트를 클릭하면 카메라가 그 위치로 가요.'], ['공룡 시대 작품 꾸미기', '공룡과 식물을 놓고 애니메이션을 골라요.'], ['효과음(mp3) 넣기', '소리 파일을 올려 울음소리를 재생해요.'], ['상호 작용 만들기', '공룡을 클릭하면 말하거나 움직이게 해요.']],
+    sk: ['vr', 'click', 'cbmove', 'lib', 'anim', 'media', 'sound', 'cbsay', 'cbanim'], mini: { t: '미니 탐험 장면', d: '동물에게 동작을 주고, 클릭하면 말하고 소리가 나게 해요.', pre: 'zoo', tasks: ['add3', 'anim', 'click', 'cbsay', 'sound', 'play'] }, ext: ['공룡 설명 안내판 세우기', '지점을 5곳으로 늘리기', '화산과 연기 효과 넣기'] },
+  { n: 24, t: 'VR 롤러코스터', ico: '🎢', k: 'v', tpl: 'KPQ-MFX', fin: 'TCV-BXQ', prep: 'VR로 보려면 스마트폰과 카드보드가 필요해요.', intro: '놀이공원 롤러코스터 트랙을 만들고, 카트가 경로를 따라 달리게 한 뒤 VR로 타 봐요. 디자인에 시간이 많이 들고 코딩은 간단해요.',
+    steps: [['롤러코스터 트랙 만들기', '트랙 조각을 복제하고 높이와 각도를 바꿔 이어 붙여요.'], ['롤러코스터 경로 만들기', '경로 오브젝트의 점을 트랙 위에 맞춰 놓아요.'], ['속도 바꿔 카트 움직이기', '카트가 경로를 따라 이동하는 시간을 조절해 속도를 바꿔요.'], ['주변 환경 꾸미고 VR로 감상하기', '카메라를 카트에 붙이고 주변을 꾸민 뒤 VR로 타요.']],
+    sk: ['blocks', 'dup', 'rotate3', 'height', 'path', 'equip', 'camfollow', 'cbmove', 'vars', 'vr'], mini: { t: '미니 카트', d: '트랙 조각을 복제해 높이와 각도를 바꾸고, 카트에 탑승객을 붙여 앞으로 움직이게 해요.', pre: 'track', tasks: ['dup2', 'height', 'rot', 'attach', 'cbmove', 'play'] }, ext: ['360도 회전 구간 만들기', '놀이공원 다른 기구 꾸미기', '출발 신호와 소리 넣기'] }
+];
+/* 제작 단계마다 쓰는 기능 (실제 제작 안내에서 "딜라이텍스에서 이렇게 해요"로 보여 준다) */
+const STEP_SK = {
+  1: [['signup'], ['signup'], ['gallery'], ['signup'], ['cam', 'pan', 'zoom'], ['env'], ['lib', 'dragadd', 'move'], ['scene'], ['signup'], ['lib', 'env']],
+  2: [['select'], ['rotate'], ['move'], ['height'], ['scale'], ['snap'], ['attach'], ['dup'], ['color', 'attach2']],
+  3: [['insp'], ['rename'], ['usecode'], ['say', 'think'], ['phys'], ['numpos'], ['anim'], ['color'], ['equip']],
+  4: [['lib', 'anim', 'move'], ['blocks', 'color', 'scale'], ['bgm']], 5: [['lib', 'anim'], ['dup', 'multi', 'copy', 'group'], ['camset']], 6: [['websearch', 'image'], ['gif'], ['sign']],
+  7: [['tinker'], ['tinker', 'copyright'], ['upload3d', 'scale', 'move']], 8: [['fx', 'say'], ['fx', 'height'], ['rotate3'], ['env', 'ground']],
+  9: [['info'], ['collide', 'goto'], ['collide', 'goto'], ['blocks', 'color']], 10: [['info'], ['click', 'quiz'], ['ifelse', 'cbmove'], ['copy']],
+  11: [['cbsay'], ['click', 'info', 'vars'], ['varif', 'goto'], ['move', 'lib']], 12: [['env360', 'scene'], ['move', 'scale'], ['click', 'info'], ['goto'], ['info']],
+  13: [['equip', 'sign'], ['click', 'clone', 'cbmove'], ['clone', 'repeat', 'random'], ['collide', 'cbdel', 'vars'], ['timer'], ['varif']],
+  14: [['color', 'phys', 'pstatic'], ['keyev', 'push'], ['keyev', 'cbmove'], ['vars', 'keyev'], ['vars'], ['camfollow']],
+  15: [['blocks', 'phys'], ['equip', 'camfollow'], ['collide', 'info'], ['collide', 'goto'], ['dup'], ['dup', 'scale3']], 16: [['camfollow', 'keyev'], ['info', 'collide'], ['func', 'clone', 'random'], ['phys', 'pstatic', 'bounce']],
+  17: [['merge'], ['phone'], ['mergeprop'], ['lib', 'attach', 'height']], 18: [['merge'], ['lib', 'scale', 'rotate'], ['color', 'anim', 'say'], ['sign']],
+  19: [['merge', 'lib'], ['clone', 'random', 'cbmove'], ['click', 'cbdel'], ['collide', 'vars'], ['varif']], 20: [['blocks', 'color'], ['scale'], ['attach', 'orbit', 'repeat'], ['vars', 'parallel']],
+  21: [['equip', 'camfollow'], ['info'], ['repeat', 'cbmove'], ['collide', 'cbdel', 'vars'], ['varif']], 22: [['lib'], ['dup', 'copy'], ['dup'], ['click', 'cbdel'], ['vars'], ['varif']],
+  23: [['click', 'cbmove'], ['lib', 'anim'], ['media', 'sound'], ['click', 'cbsay', 'cbanim']], 24: [['blocks', 'dup', 'rotate3', 'height'], ['path'], ['path', 'vars'], ['equip', 'vr']]
+};
+const DX_URL = 'https://edu.delightex.com';
+/* 딜라이텍스를 화면 오른쪽 절반 크기의 새 창으로 연다 (패드에서는 새 탭으로 열린다) */
+const openSide = url => { const w = Math.max(640, Math.round((screen.availWidth || 1366) / 2)), hh = screen.availHeight || 768; const win = window.open(url, 'delightex', `popup=yes,width=${w},height=${hh},left=${(screen.availWidth || 1366) - w},top=0`); if (!win) toast('새 창이 막혔어요. 주소창 오른쪽의 팝업 차단 표시를 눌러 허용해 주세요.', 4500); else toast('딜라이텍스 창을 오른쪽에 열었어요. 이 창은 Win + ← 키로 왼쪽 절반에 붙이세요.', 4500); return win; };
+App.twoWin = function () { Modal.open({ ico: '🪟', k: '창 두 개로 쓰기', title: '참고서와 딜라이텍스를 나란히 놓는 방법', wide: true, body: `<div class="learn-grid"><div class="learn-box"><h4>1. 딜라이텍스 창 열기</h4><p>차시 화면의 <b>🪟 딜라이텍스를 옆 창으로 열기</b>를 누르면 화면 오른쪽 절반 크기의 새 창이 열려요. 내 딜라이텍스 계정으로 로그인해요.</p></div><div class="learn-box"><h4>2. 이 참고서는 왼쪽에</h4><p>이 창을 한 번 클릭하고 키보드 <span class="kbd">Win</span> + <span class="kbd">←</span> 를 누르면 왼쪽 절반에 딱 붙어요. (딜라이텍스 창은 <span class="kbd">Win</span> + <span class="kbd">→</span>)</p></div><div class="learn-box v"><h4>3. 왔다 갔다 하기</h4><p>왼쪽에서 한 단계를 읽고 → 오른쪽 딜라이텍스에서 그대로 해 보고 → 왼쪽에서 <b>✓ 했어요</b>를 눌러요. 창이 가려지면 <span class="kbd">Alt</span> + <span class="kbd">Tab</span> 으로 바꿔요.</p></div><div class="learn-box v"><h4>4. 모르는 기능이 나오면</h4><p>단계 아래의 <b>🎮 연습장에서 먼저 해 보기</b>로 이 참고서 안에서 연습한 뒤, 딜라이텍스에서 똑같이 해요. 연습한 것은 딜라이텍스에 저장되지 않아요.</p></div></div><p style="margin-top:12px">📱 <b>패드</b>에서는 화면 나누기(멀티태스킹)로 브라우저 두 개를 나란히 놓거나, 패드에는 이 참고서를 띄우고 컴퓨터에서 딜라이텍스를 열어요.</p>`, buttons: [['알겠어요 ✓', 'btn-gold', null]] }); };
+const PJ = n => PROJECTS.find(p => p.n === +n);
+const projUrl = code => 'https://edu.cospaces.io/' + code;
+/* 저장 기록 (접근 제한에는 쓰지 않는다) */
+const PStore = {
+  get(n) { const d = Store.get(); d.proj = d.proj || {}; return d.proj[n] = d.proj[n] || { steps: {}, read: {} }; },
+  set(n, fn) { Store.set(d => { d.proj = d.proj || {}; const p = d.proj[n] = d.proj[n] || { steps: {}, read: {} }; p.steps = p.steps || {}; p.read = p.read || {}; fn(p); }); },
+  skillDone(n, k) { const s = SKILLS[k], d = Store.get(); return !!((s && s[2] && d.missions[s[2]]) || this.get(n).read[k]); },
+  stat(n) { const P = PJ(n), p = this.get(n); return { sk: P.sk.filter(k => this.skillDone(n, k)).length, skN: P.sk.length, st: P.steps.filter((_, i) => p.steps[i]).length, stN: P.steps.length, combo: !!p.combo, done: !!p.done }; }
+};
+const Fav = {
+  all() { const d = Store.get(); d.favs = d.favs || {}; ['p', 's', 'f'].forEach(k => d.favs[k] = d.favs[k] || {}); return d.favs; },
+  has(t, id) { return !!this.all()[t][id]; },
+  toggle(t, id) { let on; Store.set(d => { d.favs = d.favs || {}; d.favs[t] = d.favs[t] || {}; if (d.favs[t][id]) delete d.favs[t][id]; else d.favs[t][id] = Date.now(); on = !!d.favs[t][id]; }); toast(on ? '⭐ 즐겨찾기에 담았어요.' : '즐겨찾기에서 뺐어요.', 1500); return on; },
+  btn(t, id, small) { const b = h('button', { class: 'fav-btn' + (this.has(t, id) ? ' on' : '') + (small ? ' sm' : ''), title: '즐겨찾기', onclick: e => { e.stopPropagation(); b.classList.toggle('on', this.toggle(t, id)); } }, '★'); return b; }
+};
+
+/* ---------- 조합 미션(가상 연습장) ---------- */
+const COMBO = {};
+function comboOf(P) {
+  if (COMBO[P.n]) return COMBO[P.n];
+  const L = { id: 'P' + P.n, n: `${P.n}차시 훈련`, t: P.t, ico: P.ico, sub: P.mini.d, missions: [], solo: [], combo: true, pn: P.n, orn: ['🎖️', '훈련 수료'] }, T = P.mini.tasks.map(k => TASKS[k]);
+  makeWork(L, { t: `기능 조합 미션: ${P.mini.t}`, ico: P.ico, inherit: false, preset: MINI[P.mini.pre] || MINI.empty, goal: P.mini.d + ' <br><span style="opacity:.8">연습장에는 겨울 마을 소품만 있어요. 실제 작품에서는 같은 방법을 그 차시의 오브젝트에 쓰면 돼요.</span>', uses: P.sk.slice(0, 6).map(k => SKILLS[k][0]).join(' · '), idea: '체크리스트를 다 채우면 실제 프로젝트 제작으로 넘어가요. 다 못 해도 언제든 넘어갈 수 있어요.',
+    steps: T.map(t => t[0] + '.'),
+    track(api, ev, go) { const ed = api.ed, on = (e, fn) => api.on(ed, e, x => { fn(x || {}); go(); });
+      on('add', () => ev.add = (ev.add || 0) + 1); on('moved', () => ev.moved = 1); on('attach', () => ev.attach = (ev.attach || 0) + 1); on('rename', () => ev.rename = 1); on('rotated', () => ev.rot = 1); on('scaled', () => ev.scaled = 1);
+      on('heighting', () => ev.height = 1); on('anim', () => ev.anim = 1); on('upload', () => ev.up = 1); on('env', () => ev.env = 1); },
+    checks: (ed, ev) => T.map(t => [!!t[1](ed, ev), t[0]]), guide: (ed, ev, i) => T[i] ? T[i][2] : '' });
+  return COMBO[P.n] = L;
+}
+Lesson.startCombo = function (n) { const P = PJ(n), L = comboOf(P); this.L = L; this.seq = null; this.ret = () => App.project(n, 1); this.build(); App.show('lesson'); this.start(L, -1, 'work'); };
+Lesson.openFrom = function (lid, idx, ret) { this._retNext = ret; this.open(lid, idx, 'learn'); };
+
+/* ---------- 기능 상세 창 (훈련실 화면 2) ---------- */
+App.skillModal = function (k, pn) {
+  const s = skillInfo(k); if (!s) return; const d = Store.get(), done = s.mid && d.missions[s.mid], others = PROJECTS.filter(p => p.sk.includes(k) && p.n !== pn), back = () => pn ? App.project(pn, 1) : App.skills();
+  if (pn) PStore.set(pn, p => p.read[k] = Date.now());
+  const sec = (ico, t, html) => html ? h('div', { class: 'sk-sec' }, h('h4', null, ico + ' ' + t), h('div', { html })) : null;
+  const body = h('div', { class: 'sk-modal' },
+    h('div', { class: 'sk-chips' }, h('span', { class: 'chip ' + LIC[s.lic][1] }, LIC[s.lic][0]), done ? h('span', { class: 'chip tag-must' }, '✓ 연습 완료') : null, s.x ? h('span', { class: 'chip tag-basic' }, `연습실 ${s.x.L.n}`) : h('span', { class: 'chip tag-challenge' }, '설명만 있는 기능')),
+    sec('💡', '이 기능은 무엇인가요?', s.what), sec('📍', '실제 딜라이텍스에서 메뉴 위치', s.where), sec('🖱️', '조작 방법', s.how + (s.x && s.x.m.combo ? `<div class="sk-combo">${s.x.m.combo}</div>` : '')),
+    s.x && s.x.m.steps ? h('div', { class: 'sk-sec' }, h('h4', null, '👣 단계별로 따라 하기'), h('ol', { class: 'sk-steps' }, s.x.m.steps.map(t => h('li', { html: t })))) : null,
+    sec('⚠️', '자주 하는 실수와 해결 방법', s.tip),
+    s.x ? h('div', { class: 'sk-sec ok' }, h('h4', null, '✅ 제대로 했다면'), h('div', { html: '연습장에서 미션을 성공하면 "성공!" 표시와 별이 나와요. 시범 보기 버튼으로 올바른 결과를 먼저 볼 수도 있어요.' })) : null,
+    others.length ? h('div', { class: 'sk-sec' }, h('h4', null, '📁 이 기능을 쓰는 다른 차시'), h('div', { class: 'mini-list' }, others.map(p => h('button', { class: 'chip tag-basic chip-btn', onclick: () => { Modal.close(); App.project(p.n, 1); } }, `${p.n}차시 ${p.t}`)))) : null);
+  Modal.open({ ico: s.ico, k: pn ? `${pn}차시 · 제작 준비 훈련실` : '기능별 연습', title: s.t, wide: true, body, buttons: [
+    s.x ? [done ? '↺ 다시 연습하기' : '▶ 직접 따라 하기 (연습장)', 'btn-gold', () => Lesson.openFrom(s.x.L.id, s.x.L.missions.indexOf(s.x.m), back)] : ['알겠어요 ✓', 'btn-gold', () => back()],
+    [Fav.has('s', k) ? '★ 즐겨찾기 빼기' : '☆ 즐겨찾기', 'btn-ghost', () => { Fav.toggle('s', k); }], ['닫기', 'btn-ghost', null]] });
+};
+
+/* ---------- 첫 화면 (참고서 홈) ---------- */
+App.hub = function () {
+  this._lastPage = () => App.hub();
+  this.page(body => {
+    const d = Store.get(), a = Store.acct, favN = Object.values(Fav.all()).reduce((n, o) => n + Object.keys(o).length, 0), lastP = d.lastProj && PJ(d.lastProj);
+    body.append(h('div', { class: 'hub-hero' }, h('div', { class: 'eyebrow' }, 'DELIGHTEX CLASSROOM GUIDE'), h('h1', null, '딜라이텍스 3D 창작 참고서'), h('p', { html: '여기서 <b>먼저 연습</b>하고, 옆 창의 <b>딜라이텍스에서 진짜 작품</b>을 만들어요. 만들다가 모르는 기능이 생기면 언제든 돌아와 찾아보세요. <b>모든 차시와 기능이 처음부터 열려 있어요.</b>' }),
+      h('div', { class: 'link-row' }, h('button', { class: 'btn btn-ice', id: 'hub-side', onclick: () => openSide(DX_URL) }, '🪟 딜라이텍스를 옆 창으로 열기'), h('button', { class: 'btn btn-ghost', onclick: () => App.twoWin() }, '❔ 창 두 개로 쓰는 방법')),
+      lastP ? h('button', { class: 'btn btn-gold btn-lg', onclick: () => App.project(lastP.n) }, `▶ 이어서 보기: ${lastP.n}차시 ${lastP.t}`) : null));
+    const tile = (ico, t, s, fn, id) => h('button', { class: 'hub-tile', id, onclick: fn }, h('div', { class: 'ht-ico' }, ico), h('b', null, t), h('small', null, s));
+    body.append(h('div', { class: 'hub-grid' },
+      tile('📁', '프로젝트 전체 보기', '1~24차시 작품 · 제작 준비 훈련 · 제작 안내', () => App.projects(), 'hub-proj'),
+      tile('🎮', '기능별 연습실', '기능 하나씩 골라 가상 연습장에서 직접 해 보기', () => App.skills(), 'hub-skill'),
+      tile('📚', '전체 기능 도감', `${FEATURES.length}가지 기능 검색 · 메뉴 위치 · 사용 방법`, () => App.features(), 'hub-feat'),
+      tile('⌨️', '단축키 모음', '키보드 · 마우스 · 패드 조작 한눈에', () => App.shortcuts(), 'hub-keys'),
+      tile('❓', '자주 묻는 질문', '안 될 때 가장 먼저 확인할 것들', () => App.faq(), 'hub-faq'),
+      tile('⭐', '나의 즐겨찾기', favN ? `담아 둔 것 ${favN}개` : '자주 보는 차시와 기능을 담아 두세요', () => App.favs(), 'hub-fav')));
+    body.append(h('div', { class: 'hub-sub' }, h('button', { class: 'btn btn-ghost', onclick: () => App.dash() }, '📅 40분 수업용 차시 학습 (LEVEL 0~15)'), h('button', { class: 'btn btn-ghost', onclick: () => App.projectB() }, '🎄 크리스마스 마을 프로젝트'), h('button', { class: 'btn btn-ghost', onclick: () => App.progress() }, '📊 내 기록'),
+      h('span', { class: 'hub-note' }, a ? '☁️ 기록이 내 계정에 저장돼요.' : '💾 손님 모드: 이 기기에만 저장돼요.')));
+  });
+};
+
+/* ---------- 프로젝트 전체 보기 ---------- */
+App.projects = function (kind) {
+  this._lastPage = () => App.projects(kind);
+  this.page(body => {
+    let k = kind || '';
+    const grid = h('div', { class: 'proj-grid' }), tabs = h('div', { class: 'ptabs dark' });
+    body.append(h('div', { class: 'page-head' }, h('div', null, h('div', { class: 'eyebrow' }, 'ALL PROJECTS'), h('h1', null, '📁 프로젝트 전체 보기'), h('p', { html: '24개 차시가 <b>모두 열려 있어요.</b> 만들고 싶은 작품을 고르세요. 완료 표시는 기록일 뿐, 다른 차시를 막지 않아요.' })), h('button', { class: 'btn btn-ghost', onclick: () => App.hub() }, '◀ 처음으로')), tabs, grid);
+    const draw = () => {
+      tabs.innerHTML = ''; tabs.append(h('button', { class: !k ? 'on' : '', onclick: () => { k = ''; draw(); } }, '전체 24'), ...Object.entries(PKIND).map(([id, v]) => h('button', { class: k === id ? 'on' : '', onclick: () => { k = id; draw(); } }, `${v[0]} ${PROJECTS.filter(p => p.k === id).length}`)));
+      grid.innerHTML = ''; PROJECTS.filter(p => !k || p.k === k).forEach(P => { const s = PStore.stat(P.n);
+        grid.append(h('div', { class: 'proj-card' + (s.done ? ' done' : ''), 'data-pn': P.n, onclick: () => App.project(P.n) }, Fav.btn('p', P.n, true), h('div', { class: 'pc-n' }, `${P.n}차시`), h('div', { class: 'pc-ico' }, P.ico), h('h3', null, P.t), h('span', { class: 'chip ' + PKIND[P.k][1] }, PKIND[P.k][0]),
+          h('div', { class: 'pc-foot' }, h('span', null, `🎯 훈련 ${s.sk}/${s.skN}`), h('span', null, `🛠️ 제작 ${s.st}/${s.stN}`), s.done ? h('span', { class: 'pc-done' }, '✓ 완성') : null))); });
+    };
+    draw();
+  });
+};
+
+/* ---------- 프로젝트 한 차시 ---------- tab: 0 완성작, 1 훈련실, 2 제작 안내, 3 추가 창작·완성 */
+App.project = function (n, tab) {
+  const P = PJ(n); if (!P) return App.projects(); tab = tab || 0; this._lastPage = () => App.project(n, tab); Store.get().lastProj = P.n;
+  this.page(body => {
+    const st = PStore.get(P.n), i0 = PROJECTS.indexOf(P), prev = PROJECTS[i0 - 1], next = PROJECTS[i0 + 1];
+    const go = t => App.project(n, t), TABS = ['① 완성작 살펴보기', '② 제작 준비 훈련실', '③ 실제 제작 안내', '④ 추가 창작 · 완성'];
+    body.append(h('div', { class: 'page-head' }, h('div', null, h('div', { class: 'eyebrow' }, `PROJECT ${String(P.n).padStart(2, '0')} · ${PKIND[P.k][0]}`), h('h1', null, `${P.ico} ${P.t}`), h('p', null, P.intro)),
+      h('div', { class: 'ph-btns' }, Fav.btn('p', P.n), prev ? h('button', { class: 'btn btn-ghost btn-sm', onclick: () => App.project(prev.n) }, `◀ ${prev.n}차시`) : null, next ? h('button', { class: 'btn btn-ghost btn-sm', onclick: () => App.project(next.n) }, `${next.n}차시 ▶`) : null, h('button', { class: 'btn btn-ghost btn-sm', onclick: () => App.projects() }, '📁 전체'))));
+    body.append(h('div', { class: 'ptabs dark proj-tabs' }, TABS.map((t, i) => h('button', { class: i === tab ? 'on' : '', 'data-tab': i, onclick: () => go(i) }, t))));
+    const box = h('div', { class: 'proj-body' }); body.append(box);
+    const nav = (...btns) => h('div', { class: 'proj-nav' }, btns);
+    if (tab === 0) {
+      box.append(h('div', { class: 'two-col' },
+        h('div', { class: 'panel' }, h('h3', null, '🎬 완성작 먼저 살펴보기'), h('p', { html: '아래 버튼으로 완성된 작품을 열어 ▶ 플레이해 보세요. <b>무엇이 움직이는지, 무엇을 클릭할 수 있는지</b> 살펴보면 만들 때 훨씬 쉬워요.' }),
+          h('div', { class: 'link-row' }, h('button', { class: 'btn btn-gold', onclick: () => openSide(projUrl(P.fin)) }, '🌟 완성작을 옆 창으로 열기'), h('button', { class: 'btn btn-ice', onclick: () => openSide(projUrl(P.tpl)) }, '📑 템플릿을 옆 창으로 열기'), h('button', { class: 'btn btn-ghost', onclick: () => App.twoWin() }, '❔ 창 두 개 놓는 법')),
+          h('p', { class: 'form-tip', html: `완성작 <code>${projUrl(P.fin)}</code><br>템플릿 <code>${projUrl(P.tpl)}</code><br>주소는 수업 PPT 첫 장에서 옮겨 적었어요. 열리지 않으면 PPT의 주소를 직접 입력해 주세요.` }),
+          h('button', { class: 'btn btn-ghost btn-sm', onclick: () => App.skillModal('template', P.n) }, '📑 템플릿을 내 계정으로 복사하는 방법'),
+          P.prep ? h('div', { class: 'pro-banner', html: '🧰 <b>준비물</b> · ' + P.prep }) : null),
+        h('div', { class: 'panel' }, h('h3', null, `🎯 오늘 필요한 기능 ${P.sk.length}가지`), h('div', { class: 'mini-list' }, P.sk.map(k => h('button', { class: 'chip chip-btn ' + (PStore.skillDone(P.n, k) ? 'tag-must' : 'tag-basic'), onclick: () => App.skillModal(k, P.n) }, `${SKILLS[k][1]} ${SKILLS[k][0]}`))),
+          h('p', { class: 'form-tip' }, '기능 이름을 누르면 설명을 볼 수 있어요. 이미 아는 기능은 건너뛰어도 돼요.'))));
+      box.append(nav(h('button', { class: 'btn btn-gold btn-lg', onclick: () => go(1) }, '다음: 제작 준비 훈련실 ▶'), h('button', { class: 'btn btn-ghost btn-lg', id: 'skip-train', onclick: () => go(2) }, '훈련 건너뛰고 바로 제작하기 ⏭')));
+    } else if (tab === 1) {
+      const s = PStore.stat(P.n);
+      box.append(h('div', { class: 'train-head' }, h('div', null, h('div', { class: 'eyebrow' }, 'PRE-MISSION TRAINING'), h('h2', null, '제작 준비 훈련실'), h('p', { html: `<b>${P.t}</b>을(를) 만들려면 아래 기능 <b>${P.sk.length}가지</b>가 필요해요. 카드를 눌러 하나씩 살펴보고 연습해요. <b>다 하지 않아도 제작으로 넘어갈 수 있어요.</b>` })), h('div', { class: 'star-pill' }, `살펴본 기능 ${s.sk}/${s.skN}`)));
+      const grid = h('div', { class: 'skill-grid' }); box.append(grid);
+      P.sk.forEach((k, i) => { const x = skillInfo(k), ok = PStore.skillDone(P.n, k);
+        grid.append(h('div', { class: 'skill-card' + (ok ? ' done' : ''), 'data-sk': k, onclick: () => App.skillModal(k, P.n) }, h('div', { class: 'sc-n' }, ok ? '✓' : String(i + 1).padStart(2, '0')), h('div', { class: 'sc-ico' }, x.ico), h('b', null, x.t), h('small', null, x.x ? '설명 + 직접 따라 하기' : '설명 보기'), h('span', { class: 'chip ' + LIC[x.lic][1] }, LIC[x.lic][0]))); });
+      box.append(h('div', { class: 'combo-card' + (st.combo ? ' done' : '') }, h('div', { class: 'cc-ico' }, P.ico), h('div', { class: 'cc-b' }, h('div', { class: 'eyebrow' }, '기능 조합 미션'), h('h3', null, P.mini.t), h('p', null, P.mini.d), h('div', { class: 'mini-list' }, P.mini.tasks.map((t, i) => h('span', { class: 'chip tag-basic' }, `${i + 1}. ${TASKS[t][0]}`)))),
+        h('button', { class: 'btn btn-lg ' + (st.combo ? 'btn-ghost' : 'btn-ice'), id: 'btn-combo', onclick: () => Lesson.startCombo(P.n) }, st.combo ? '↺ 다시 해 보기' : '▶ 미니 실습 시작')));
+      box.append(nav(h('button', { class: 'btn btn-gold btn-lg', id: 'btn-make', onclick: () => go(2) }, '🛠️ 실제 프로젝트 제작 시작하기'), h('button', { class: 'btn btn-ghost btn-lg', onclick: () => { PStore.set(P.n, p => { p.read = {}; }); go(1); } }, '↺ 기능 다시 연습하기'), h('button', { class: 'btn btn-ghost btn-lg', onclick: () => App.skills() }, '🎮 다른 기능 연습하기')));
+    } else if (tab === 2) {
+      const N = P.steps.length, SK = STEP_SK[P.n] || [], cnt = h('div', { class: 'star-pill' }), upd = () => cnt.textContent = `진행 ${P.steps.filter((_, i) => PStore.get(P.n).steps[i]).length}/${N}`; upd();
+      let cur = Math.min(N - 1, Math.max(0, st.cur != null ? st.cur : P.steps.findIndex((_, i) => !st.steps[i]))); if (cur < 0) cur = 0;
+      box.append(h('div', { class: 'train-head' }, h('div', null, h('div', { class: 'eyebrow' }, 'MAKE IT · 딜라이텍스에서 직접 만들기'), h('h2', null, '실제 제작 안내'), h('p', { html: '이 참고서와 <b>딜라이텍스 창을 나란히</b> 놓고, 한 단계씩 읽고 → 딜라이텍스에서 해 보고 → <b>✓ 했어요</b>를 눌러요.' })), cnt));
+      box.append(h('div', { class: 'side-bar' }, h('button', { class: 'btn btn-gold', id: 'btn-side', onclick: () => openSide(DX_URL) }, '🪟 딜라이텍스를 옆 창으로 열기'), h('button', { class: 'btn btn-ice', onclick: () => openSide(projUrl(P.tpl)) }, '📑 템플릿을 옆 창으로 열기'), h('button', { class: 'btn btn-ghost', onclick: () => App.twoWin() }, '❔ 창 두 개 나란히 놓는 법')));
+      const view = h('div', { class: 'step-view' }), list = h('div', { class: 'make-list' }); box.append(view);
+      const setDone = (i, v) => { PStore.set(P.n, p => { if (v) p.steps[i] = Date.now(); else delete p.steps[i]; }); upd(); drawList(); };
+      const show = i => { cur = Math.min(N - 1, Math.max(0, i)); PStore.set(P.n, p => p.cur = cur); const s = P.steps[cur], done = !!PStore.get(P.n).steps[cur], ks = (SK[cur] || []).filter(k => SKILLS[k]);
+        view.innerHTML = ''; view.append(
+          h('div', { class: 'sv-dots' }, P.steps.map((_, k) => h('button', { class: 'sv-dot' + (k === cur ? ' cur' : '') + (PStore.get(P.n).steps[k] ? ' done' : ''), title: P.steps[k][0], onclick: () => show(k) }, PStore.get(P.n).steps[k] ? '✓' : k + 1))),
+          h('div', { class: 'sv-card' + (done ? ' done' : '') }, h('div', { class: 'sv-k' }, `STEP ${cur + 1} / ${N}`), h('h3', null, s[0]), h('p', { class: 'sv-how' }, s[1]),
+            ks.length ? h('div', { class: 'sv-sk' }, h('h4', null, '🖱️ 딜라이텍스에서 이렇게 해요'), ks.map(k => { const x = skillInfo(k); return h('div', { class: 'sv-row' }, h('div', { class: 'sv-row-h' }, h('b', null, `${x.ico} ${x.t}`), h('span', { class: 'chip ' + LIC[x.lic][1] }, LIC[x.lic][0])),
+              x.where ? h('div', { class: 'sv-line', html: `<i>📍 메뉴 위치</i>${x.where}` }) : null, x.how ? h('div', { class: 'sv-line', html: `<i>🖱️ 방법</i>${x.how}` }) : null, x.tip ? h('div', { class: 'sv-line warn', html: `<i>⚠️ 주의</i>${x.tip}` }) : null,
+              h('div', { class: 'sv-btns' }, x.x ? h('button', { class: 'btn btn-sm btn-ice', onclick: () => Lesson.openFrom(x.x.L.id, x.x.L.missions.indexOf(x.x.m), () => App.project(P.n, 2)) }, '🎮 연습장에서 먼저 해 보기') : null, h('button', { class: 'btn btn-sm btn-ghost', onclick: () => App.skillModal(k, P.n) }, '자세히 보기'))); })) : null,
+            h('div', { class: 'sv-nav' }, h('button', { class: 'btn btn-ghost btn-lg', disabled: cur === 0, onclick: () => show(cur - 1) }, '◀ 이전'),
+              h('button', { class: 'btn btn-lg ' + (done ? 'btn-ghost' : 'btn-gold'), id: 'btn-step-done', onclick: () => { if (!done) { setDone(cur, true); Sfx.pop && Sfx.pop(); if (cur + 1 < N) show(cur + 1); else { show(cur); toast('🎉 모든 단계를 마쳤어요! 추가 창작으로 넘어가 보세요.', 3500); } } else { setDone(cur, false); show(cur); } } }, done ? '✓ 완료함 (눌러서 취소)' : cur + 1 < N ? '✓ 했어요 · 다음 단계 ▶' : '✓ 했어요 · 마지막 단계!'),
+              cur + 1 < N ? h('button', { class: 'btn btn-ghost btn-lg', onclick: () => show(cur + 1) }, '건너뛰기 ▶') : null)));
+        drawList(); };
+      const drawList = () => { list.innerHTML = ''; P.steps.forEach((s, i) => { const d = !!PStore.get(P.n).steps[i]; list.append(h('div', { class: 'make-step' + (d ? ' done' : '') + (i === cur ? ' cur' : ''), 'data-i': i, onclick: () => { show(i); view.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }, h('div', { class: 'ms-n', onclick: e => { e.stopPropagation(); setDone(i, !d); show(cur); } }, d ? '✓' : i + 1), h('div', { class: 'ms-b' }, h('b', null, `STEP ${i + 1}. ${s[0]}`), h('p', null, s[1])))); }); };
+      show(cur);
+      box.append(h('h3', { class: 'sec-h', style: { marginTop: '18px' } }, '📋 전체 단계 한눈에 ', h('small', null, '단계를 누르면 위에 크게 보여요. 번호 동그라미를 누르면 완료 표시만 바뀌어요.')), list);
+      box.append(h('div', { class: 'panel', style: { marginTop: '14px' } }, h('h3', null, '🆘 만들다가 막히면'), h('div', { class: 'link-row' }, h('button', { class: 'btn btn-ghost', onclick: () => go(1) }, '🎯 제작 준비 훈련실'), h('button', { class: 'btn btn-ghost', onclick: () => App.features() }, '📚 기능 도감에서 찾기'), h('button', { class: 'btn btn-ghost', onclick: () => App.faq() }, '❓ 자주 묻는 질문')), h('p', { class: 'form-tip' }, '자세한 화면 그림은 수업 PPT를 함께 보세요. 연습장에서 연습한 것은 딜라이텍스에 저장되지 않아요.')));
+      box.append(nav(h('button', { class: 'btn btn-gold btn-lg', onclick: () => go(3) }, '다음: 추가 창작 · 완성 ▶'), h('button', { class: 'btn btn-ghost btn-lg', onclick: () => go(1) }, '◀ 훈련실로 돌아가기')));
+    } else {
+      box.append(h('div', { class: 'two-col' },
+        h('div', { class: 'panel' }, h('h3', null, '✨ 추가 창작 (확장 미션)'), h('p', null, '기본 작품을 완성했다면 나만의 생각을 더해 보세요.'), h('ul', { class: 'ext-list' }, P.ext.map(x => h('li', null, x)))),
+        h('div', { class: 'panel' }, h('h3', null, '🏁 작품 완성 점검'), h('ul', { class: 'ext-list' }, ['▶ 플레이로 처음부터 끝까지 실행해 보았나요?', '클릭·충돌 같은 동작이 모두 반응하나요?', '작품 이름을 알아보기 쉽게 바꾸었나요?', '다른 사람의 그림·모델을 썼다면 출처를 적었나요?'].map(x => h('li', null, x))),
+          h('button', { class: 'btn btn-lg ' + (st.done ? 'btn-ghost' : 'btn-gold'), id: 'btn-pdone', onclick: () => { PStore.set(P.n, p => { if (p.done) delete p.done; else p.done = Date.now(); }); if (PStore.get(P.n).done) { confetti(); toast('🎉 작품 완성으로 표시했어요!', 2500); } go(3); } }, st.done ? '✓ 완성으로 표시됨 (눌러서 취소)' : '🎉 이 작품 완성으로 표시하기'))));
+      box.append(nav(next ? h('button', { class: 'btn btn-gold btn-lg', onclick: () => App.project(next.n) }, `다음 차시: ${next.n}차시 ${next.t} ▶`) : null, h('button', { class: 'btn btn-ghost btn-lg', onclick: () => App.projects() }, '📁 프로젝트 전체 보기')));
+    }
+  });
+};
+
+/* ---------- 기능별 연습실 ---------- */
+App.skills = function (q0) {
+  this._lastPage = () => App.skills(q0);
+  this.page(body => {
+    let q = q0 || ''; const d = Store.get(), grid = h('div', { class: 'skill-grid' });
+    const inp = h('input', { class: 'fld', id: 'skill-q', placeholder: '🔍 기능 이름으로 찾기 (예: 붙이기, 물리, 변수, 복제)', value: q, style: { maxWidth: '520px' }, oninput: e => { q = e.target.value.trim(); draw(); } });
+    body.append(h('div', { class: 'page-head' }, h('div', null, h('div', { class: 'eyebrow' }, 'SKILL TRAINING'), h('h1', null, '🎮 기능별 연습실'), h('p', { html: `프로젝트에서 쓰는 기능 <b>${Object.keys(SKILLS).length}가지</b>를 하나씩 골라 연습해요. 어느 것이든 바로 열 수 있어요.` })), h('button', { class: 'btn btn-ghost', onclick: () => App.hub() }, '◀ 처음으로')), inp, grid,
+      h('div', { class: 'hub-sub' }, h('button', { class: 'btn btn-ghost', onclick: () => App.dash() }, '📅 차시별로 차근차근 배우기 (LEVEL 0~15)'), h('button', { class: 'btn btn-ghost', onclick: () => App.features() }, '📚 전체 기능 도감')));
+    const draw = () => { grid.innerHTML = ''; const ks = Object.keys(SKILLS).filter(k => !q || (SKILLS[k][0] + (skillInfo(k).what || '')).toLowerCase().includes(q.toLowerCase()));
+      if (!ks.length) grid.append(h('div', { class: 'panel' }, '찾는 기능이 없어요. 전체 기능 도감에서도 찾아보세요.'));
+      ks.forEach(k => { const x = skillInfo(k), ok = x.mid && d.missions[x.mid], used = PROJECTS.filter(p => p.sk.includes(k)).length;
+        grid.append(h('div', { class: 'skill-card' + (ok ? ' done' : ''), 'data-sk': k, onclick: () => App.skillModal(k) }, Fav.btn('s', k, true), h('div', { class: 'sc-ico' }, x.ico), h('b', null, x.t), h('small', null, (x.x ? '직접 연습 가능' : '설명만') + (used ? ` · ${used}개 차시에서 사용` : '')), h('span', { class: 'chip ' + LIC[x.lic][1] }, LIC[x.lic][0]))); }); };
+    draw();
+  });
+};
+
+/* ---------- 즐겨찾기 ---------- */
+App.favs = function () {
+  this._lastPage = () => App.favs();
+  this.page(body => {
+    const f = Fav.all(), ps = Object.keys(f.p).map(PJ).filter(Boolean), ss = Object.keys(f.s).filter(k => SKILLS[k]), fs = Object.keys(f.f).map(n => FEATURES.find(x => x[1] === n)).filter(Boolean);
+    body.append(h('div', { class: 'page-head' }, h('div', null, h('div', { class: 'eyebrow' }, 'MY FAVORITES'), h('h1', null, '⭐ 나의 즐겨찾기'), h('p', null, '자주 보는 차시와 기능을 모아 두는 곳이에요. 카드의 ★을 누르면 담기고, 다시 누르면 빠져요.')), h('button', { class: 'btn btn-ghost', onclick: () => App.hub() }, '◀ 처음으로')));
+    if (!ps.length && !ss.length && !fs.length) return body.append(h('div', { class: 'panel' }, h('p', null, '아직 담아 둔 것이 없어요.'), h('div', { class: 'link-row' }, h('button', { class: 'btn btn-gold', onclick: () => App.projects() }, '📁 프로젝트 보러 가기'), h('button', { class: 'btn btn-ice', onclick: () => App.skills() }, '🎮 기능 연습실 가기'))));
+    if (ps.length) body.append(h('h2', { class: 'sec-h' }, '📁 프로젝트'), h('div', { class: 'proj-grid' }, ps.map(P => h('div', { class: 'proj-card', onclick: () => App.project(P.n) }, Fav.btn('p', P.n, true), h('div', { class: 'pc-n' }, `${P.n}차시`), h('div', { class: 'pc-ico' }, P.ico), h('h3', null, P.t)))));
+    if (ss.length) body.append(h('h2', { class: 'sec-h' }, '🎮 기능'), h('div', { class: 'skill-grid' }, ss.map(k => h('div', { class: 'skill-card', onclick: () => App.skillModal(k) }, Fav.btn('s', k, true), h('div', { class: 'sc-ico' }, SKILLS[k][1]), h('b', null, SKILLS[k][0])))));
+    if (fs.length) body.append(h('h2', { class: 'sec-h' }, '📚 도감'), h('div', { class: 'skill-grid' }, fs.map(x => h('div', { class: 'skill-card', onclick: () => App.features(x[1]) }, Fav.btn('f', x[1], true), h('div', { class: 'sc-ico' }, '📚'), h('b', null, x[1]), h('small', null, x[2])))));
+  });
+};
+
+/* ---------- 자주 묻는 질문 ---------- */
+const FAQ = [
+  ['단축키를 눌러도 아무 반응이 없어요.', '3D 화면을 <b>한 번 클릭</b>한 뒤 다시 눌러 보세요. 글자를 쓰는 칸에 커서가 있으면 단축키 대신 글자가 입력돼요. 한글 입력 상태라면 <b>한/영</b> 키를 눌러 영어로 바꿔요.'],
+  ['화면이 이상한 곳으로 가 버렸어요.', '키보드 <b>C</b>를 누르면 전체가 보이는 자리로 돌아와요. 오브젝트를 클릭하고 <b>V</b>를 누르면 그 오브젝트 앞으로 가요.'],
+  ['오브젝트가 선택되지 않아요.', '잠겨 있을 수 있어요. 왼쪽 위 오브젝트 목록에서 이름을 찾아 클릭한 뒤, 속성창에서 잠금을 풀어요. 다른 오브젝트에 가려져 있으면 화면을 돌려서 클릭해요.'],
+  ['코드에 내 오브젝트가 안 보여요.', '오브젝트를 더블 클릭 → 코드 → <b>코블록스에서 사용</b>을 켜야 목록에 나타나요. 이름도 알아보기 쉽게 바꿔 두면 찾기 편해요.'],
+  ['물리나 변수 블록이 안 보여요.', '물리 엔진과 고급 CoBlocks(변수, 충돌, 키보드 이벤트 등)는 <b>Pro</b> 기능이에요. 학교 계정이 Pro인지 선생님께 확인해 주세요.'],
+  ['플레이를 눌렀는데 아무 일도 안 일어나요.', '이벤트 블록(플레이를 누르면, 클릭하면) 아래에 다른 블록이 <b>딱 붙어</b> 있는지 확인해요. 떨어져 있으면 실행되지 않아요.'],
+  ['붙였는데 이상한 곳에 붙었어요.', '<b>Ctrl + Z</b>로 되돌리거나, 오른쪽 클릭 → 떼어내기 후 다시 붙여요. 붙일 점(위·옆·앞)을 정확히 클릭해요.'],
+  ['실수로 지웠어요.', '바로 <b>Ctrl + Z</b>를 누르면 되돌아와요. 여러 번 누르면 여러 단계 전으로 돌아가요.'],
+  ['작품이 느려졌어요.', '오브젝트나 특수 효과가 너무 많으면 느려져요. 화면에 안 보이는 것은 지우고, 복제 수를 줄여 보세요.'],
+  ['머지 큐브나 AI 메뉴가 없어요.', '머지 큐브는 추가 옵션이고, AI 기능은 Pro 계정에서 선생님이 켜 주어야 보여요.'],
+  ['이 사이트에서 연습한 것이 실제 딜라이텍스에 저장되나요?', '아니요. 여기는 <b>연습용 가상 연습장</b>이에요. 실제 작품은 딜라이텍스 사이트에서 만들어요. 버튼 위치나 모양이 조금 다를 수 있어요.'],
+  ['패드(태블릿)에서도 쓸 수 있나요?', '네. 한 손가락으로 끌면 화면이 돌고, <b>두 손가락으로 끌면</b> 화면이 옮겨지고, <b>벌리고 오므리면</b> 확대·축소돼요. 오브젝트를 <b>길게 누르면</b> 오른쪽 클릭 메뉴, <b>두 번 톡톡</b> 치면 속성창이 열려요. 키보드 단축키는 화면 아래 <b>⌨ 키</b> 버튼으로 눌러요. 다만 키보드·마우스 조작 자체를 익히는 LEVEL 0과 일부 미션은 PC에서 하는 것이 좋아요.']
+];
+App.faq = function () {
+  this._lastPage = () => App.faq();
+  this.page(body => {
+    body.append(h('div', { class: 'page-head' }, h('div', null, h('div', { class: 'eyebrow' }, 'FAQ'), h('h1', null, '❓ 자주 묻는 질문'), h('p', null, '안 될 때 가장 먼저 확인해 보세요. 질문을 누르면 답이 열려요.')), h('button', { class: 'btn btn-ghost', onclick: () => App.hub() }, '◀ 처음으로')),
+      h('div', { class: 'faq-list' }, FAQ.map(([q, a]) => { const it = h('div', { class: 'faq-item', onclick: () => it.classList.toggle('open') }, h('div', { class: 'fq-q' }, h('span', null, 'Q'), q), h('div', { class: 'fq-a', html: a })); return it; })));
   });
 };
 
@@ -4960,6 +5474,86 @@ function pbGuide(ct) {
     '진도는 학생 컴퓨터 브라우저에 저장돼요. 컴퓨터가 바뀌면 진도 화면의 <b>진도 파일 저장/불러오기</b>를 쓰세요. 시범 수업 때는 진도 화면에서 <b>모든 레벨 열기</b>를 켜세요.'
   ].map(s => `<li><span>${s}</span></li>`).join('') }), h('div', { class: 'alt', html: '⚠️ 이 웹앱은 딜라이텍스와 연결된 프로그램이 아닌 <b>연습용 가상 편집기</b>예요. 실제 메뉴의 위치·이름·아이콘은 업데이트에 따라 달라질 수 있으니, 수업 전 학교 계정으로 화면을 한 번 확인해 주세요.' })));
 }
+
+/* ---- touch.js ---- */
+/* ============================================================
+   패드(터치) 지원 — 한 손가락: 돌리기/옮기기 · 두 손가락: 화면 이동 + 확대/축소
+   길게 누르기: 오른쪽 클릭 · 두 번 톡: 더블 클릭 · 화면 키 버튼: 키보드 단축키
+   ============================================================ */
+const IS_TOUCH = (() => { try { return matchMedia('(pointer: coarse)').matches || navigator.maxTouchPoints > 0; } catch (e) { return false; } })();
+(() => {
+  const P = Editor.prototype, bind0 = P._bind, down0 = P._down, move0 = P._move, up0 = P._upH, dbl0 = P._dbl, destroy0 = P.destroy;
+  // 터치 이벤트를 마우스 이벤트처럼 보이게 감싼다 (화면 키의 Alt·Shift 상태도 여기서 넣는다)
+  const fake = (ed, e, o) => Object.assign({ clientX: e.clientX, clientY: e.clientY, button: 0, buttons: 1, altKey: !!(e.altKey || ed.vk.alt), shiftKey: !!(e.shiftKey || ed.vk.shift), ctrlKey: !!e.ctrlKey, metaKey: !!e.metaKey, target: e.target, pointerType: e.pointerType, pointerId: e.pointerId, deltaY: 0, _fake: true, preventDefault() { try { e.preventDefault(); } catch (x) { } }, stopPropagation() { } }, o || {});
+  const KEYS = [['Space', '␣ Space', 'hold'], ['AltLeft', 'Alt', 'alt'], ['ShiftLeft', 'Shift', 'shift'], ['KeyV', 'V'], ['KeyC', 'C'], ['KeyF', 'F'], ['KeyR', 'R'], ['KeyS', 'S'], ['KeyG', 'G'], ['KeyU', 'U'], ['Delete', 'Del'], ['Equal', '＋', null, { shiftKey: true, key: '+' }], ['Minus', '－'], ['ArrowUp', '↑'], ['ArrowDown', '↓'],
+    ['KeyA', 'Ctrl+A', null, { ctrlKey: true }], ['KeyC', 'Ctrl+C', null, { ctrlKey: true }], ['KeyV', 'Ctrl+V', null, { ctrlKey: true }], ['KeyD', 'Ctrl+D', null, { ctrlKey: true }], ['KeyZ', 'Ctrl+Z', null, { ctrlKey: true }], ['Escape', 'Esc']];
+  P._bind = function () {
+    this.vk = { alt: false, shift: false, space: false }; this._t = { pts: new Map(), g: null, lp: 0, lpFired: false, ignore: false, tap: null, start: null };
+    bind0.call(this);
+    const ed = this, cv = this.renderer.domElement, r = this.root; cv.style.touchAction = 'none';
+    window.addEventListener('pointercancel', this._pc = e => this._upH(e));
+    cv.addEventListener('contextmenu', e => { const T = this._t; if (T.start && performance.now() - T.start.t < 1500 && T.long && (T.pts.size || performance.now() - (T.upT || 0) < 300)) T.long(); });
+    // ---- 화면 키 버튼 ----
+    const send = (code, o) => { const init = Object.assign({ code, key: code.replace(/^Key/, '').toLowerCase(), bubbles: true, cancelable: true }, o || {}); r.dispatchEvent(new KeyboardEvent('keydown', init)); r.dispatchEvent(new KeyboardEvent('keyup', init)); };
+    const bar = h('div', { class: 'vk-bar' + (IS_TOUCH ? '' : ' closed') }), tg = h('button', { class: 'vk-toggle', title: '화면 키 버튼 (패드용)', onclick: () => { bar.classList.toggle('closed'); } }, '⌨ 키');
+    KEYS.forEach(([code, label, kind, o]) => { const b = h('button', { class: 'vk' + (kind ? ' vk-mod' : ''), 'data-vk': label }, label);
+      b.addEventListener('pointerdown', e => { e.preventDefault(); e.stopPropagation(); if (ed.playing && code !== 'Escape') return;
+        if (kind === 'hold') { ed.vk.space = !ed.vk.space; b.classList.toggle('on', ed.vk.space); r.dispatchEvent(new KeyboardEvent(ed.vk.space ? 'keydown' : 'keyup', { code: 'Space', key: ' ', bubbles: true, cancelable: true })); }
+        else if (kind) { ed.vk[kind] = !ed.vk[kind]; b.classList.toggle('on', ed.vk[kind]); if (ed.vk[kind]) ed.emit('key', { code, ctrl: false, alt: kind === 'alt', shift: kind === 'shift' }); }
+        else { b.classList.add('hit'); setTimeout(() => b.classList.remove('hit'), 180); send(code, o); } });
+      bar.append(b); });
+    this._vkEl = h('div', { class: 'vk-wrap' }, tg, bar); r.append(this._vkEl);
+  };
+  P.destroy = function () { try { window.removeEventListener('pointercancel', this._pc); } catch (e) { } return destroy0.apply(this, arguments); };
+  const dist = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+  P._down = function (e) {
+    if (e._fake) return down0.call(this, e);
+    if (e.pointerType !== 'touch') return down0.call(this, (this.vk.alt || this.vk.shift) ? fake(this, e, { button: e.button }) : e);
+    const T = this._t; T.pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (this.playing) return down0.call(this, fake(this, e));
+    if (T.pts.size === 1) {
+      T.ignore = false; T.lpFired = false; T.start = { x: e.clientX, y: e.clientY, t: performance.now(), moved: false };
+      const ex = e.clientX, ey = e.clientY, tg = e.target;
+      // 길게 누르기 = 오른쪽 클릭. 브라우저가 먼저 길게 누르기를 가로채는 경우(contextmenu)에도 같은 동작을 한다.
+      T.long = () => { if (T.lpFired || !T.start || T.start.moved || T.g || this.playing) return; T.lpFired = true; this.drag = null; down0.call(this, fake(this, { clientX: ex, clientY: ey, target: tg, pointerType: 'touch' }, { button: 2 })); try { navigator.vibrate && navigator.vibrate(12); } catch (x) { } };
+      clearTimeout(T.lp); T.lp = setTimeout(() => { if (T.pts.size === 1) T.long(); }, 430);
+      return down0.call(this, fake(this, e));
+    }
+    if (T.pts.size === 2) { // 두 손가락: 화면 옮기기 + 확대·축소
+      clearTimeout(T.lp); this.drag = null; const [a, b] = [...T.pts.values()], cx = (a.x + b.x) / 2, cy = (a.y + b.y) / 2;
+      T.g = { d0: Math.max(20, dist(a, b)), dist0: this.cam.dist, zs: 1 }; if (!this.space) { this.space = true; T.g.sp = true; this.emit('spaceDown'); }
+      this.drag = { mode: 'pan', sx: cx, sy: cy, lx: cx, ly: cy, moved: false };
+    }
+  };
+  P._move = function (e) {
+    const T = this._t;
+    if (e.pointerType !== 'touch' || !T || !T.pts.has(e.pointerId)) return move0.call(this, e.pointerType === 'touch' ? fake(this, e) : e);
+    const p = T.pts.get(e.pointerId); p.x = e.clientX; p.y = e.clientY;
+    if (T.ignore) return;
+    if (T.g) { const [a, b] = [...T.pts.values()]; if (!b) return; const cx = (a.x + b.x) / 2, cy = (a.y + b.y) / 2, k = T.g.d0 / Math.max(20, dist(a, b));
+      this.cam.dist = clamp(T.g.dist0 * k, 2, 400); this.camGoal = null;
+      if (Math.abs(k / T.g.zs - 1) > .06) { const pt = this._ndc({ clientX: cx, clientY: cy }); this.emit('zoom', { dir: k < T.g.zs ? 'in' : 'out', x: pt.x, y: pt.y }); this.stats.zoom++; T.g.zs = k; }
+      return move0.call(this, fake(this, e, { clientX: cx, clientY: cy })); }
+    if (T.start && !T.start.moved && Math.hypot(e.clientX - T.start.x, e.clientY - T.start.y) > 10) { T.start.moved = true; clearTimeout(T.lp); }
+    if (T.lpFired) return;
+    return move0.call(this, fake(this, e));
+  };
+  P._upH = function (e) {
+    const T = this._t;
+    if (e.pointerType !== 'touch' || !T || !T.pts.has(e.pointerId)) return up0.call(this, e.pointerType === 'touch' ? fake(this, e) : e);
+    T.pts.delete(e.pointerId); clearTimeout(T.lp); T.upT = performance.now();
+    if (T.g) { up0.call(this, fake(this, e)); if (T.g.sp) this.space = false; T.g = null; T.ignore = T.pts.size > 0; this.refreshUI(); return; }
+    if (T.ignore) { if (!T.pts.size) T.ignore = false; return; }
+    if (T.lpFired) { T.lpFired = false; this.drag = null; return; }
+    up0.call(this, fake(this, e));
+    const s = T.start, now = performance.now();
+    if (s && !s.moved && !this.playing) { // 두 번 톡 = 더블 클릭
+      if (T.tap && now - T.tap.t < 600 && Math.hypot(e.clientX - T.tap.x, e.clientY - T.tap.y) < 34) { T.tap = null; this._dbl(fake(this, e)); }
+      else T.tap = { t: now, x: e.clientX, y: e.clientY };
+    }
+  };
+  P._dbl = function (e) { const now = performance.now(); if (now - (this._dblT || 0) < 450) return; this._dblT = now; return dbl0.call(this, e); };
+})();
 
 /* ---- auth.js ---- */
 /* ===== Accounts, classes and cloud sync on Firebase Realtime Database =====
@@ -5110,7 +5704,7 @@ App.home = function () {
       h('div', { class: 'auth-col' }, h('div', { class: 'auth-h' }, '🧒 학생'), b('btn-slogin', 'ice', '🔑', '학생 로그인', '아이디와 비밀번호로 이어서 하기', () => Auth.form('slogin')), b('btn-ssign', 'ghost', '✨', '학생 회원가입', '선생님이 알려 준 학급 코드로 가입', () => Auth.form('ssign'))),
       h('div', { class: 'auth-col' }, h('div', { class: 'auth-h' }, '👩‍🏫 교사'), b('btn-tlogin', 'gold', '🔑', '교사 로그인', '학급 관리 대시보드', () => Auth.form('tlogin')), b('btn-tsign', 'ghost', '🏫', '교사 계정 만들기 / 학급 개설', '교사 전용 코드가 필요해요 (처음 한 번)', () => Auth.form('tsign')))),
     Cloud.ok ? null : h('div', { class: 'auth-warn' }, '⚠️ 서버에 연결할 수 없어요. 인터넷이 없으면 아래 "손님으로 연습하기"만 쓸 수 있어요.')),
-    h('div', { class: 'home-foot' }, h('button', { class: 'btn btn-ghost btn-sm', id: 'btn-guest', onclick: () => { Store.acct = null; Store.d = null; App.guest = true; App.dash(); } }, '👀 로그인 없이 손님으로 연습하기 (이 컴퓨터에만 저장)'), h('button', { class: 'btn btn-ghost btn-sm', onclick: () => App.howto() }, '❔ 사용 방법')));
+    h('div', { class: 'home-foot' }, h('button', { class: 'btn btn-ghost btn-sm', id: 'btn-guest', onclick: () => { Store.acct = null; Store.d = null; App.guest = true; App.hub(); } }, '👀 로그인 없이 손님으로 둘러보기 (이 기기에만 저장)'), h('button', { class: 'btn btn-ghost btn-sm', onclick: () => App.howto() }, '❔ 사용 방법')));
   this.show('home');
 };
 
@@ -5149,7 +5743,7 @@ App.teacher = async function () {
     if (ids.length > 1) body.append(h('div', { class: 'ptabs dark' }, ids.map(i => h('button', { class: i === cid ? 'on' : '', onclick: () => { Teacher.cid = i; App.teacher(); } }, me.classes[i].name))));
     body.append(h('div', { class: 'two-col', style: { gridTemplateColumns: '1.1fr 1fr', marginBottom: '16px' } },
       h('div', { class: 'panel code-card' }, h('h3', null, `🏫 ${C.name}`), h('div', { class: 'code-row' }, h('div', null, h('small', null, '학생 가입 코드'), h('div', { class: 'join-code', id: 'join-code' }, C.code)), h('div', { style: { display: 'flex', flexDirection: 'column', gap: '6px' } }, h('button', { class: 'btn btn-sm btn-ghost', onclick: () => { try { navigator.clipboard.writeText(C.code); toast('코드를 복사했어요.'); } catch (e) { } } }, '📋 복사'), h('button', { class: 'btn btn-sm btn-ghost', id: 'btn-regen', onclick: () => Modal.open({ ico: '♻️', k: '가입 코드', title: '새 코드를 발급할까요?', body: '<p>지금 코드는 <b>바로 쓸 수 없게</b> 되고 새 코드가 만들어져요. 이미 가입한 학생은 그대로예요.</p>', buttons: [['새 코드 발급', 'btn-gold', async () => { try { await Teacher.regen(cid); toast('새 코드를 발급했어요.'); App.teacher(); } catch (e) { toast(Auth.err(e), 4000); } }], ['취소', 'btn-ghost', null]] }) }, '♻️ 새로 발급 (기존 코드 폐기)'))), h('p', { class: 'form-tip' }, '학생 화면: 첫 화면 → 학생 회원가입 → 이 코드 입력')),
-      h('div', { class: 'panel' }, h('h3', null, '📊 학급 한눈에'), (() => { const n = rows.length, avg = n ? Math.round(rows.reduce((a, r) => a + ((r.d.sum || {}).pct || 0), 0) / n) : 0, need = rows.filter(r => (r.d.sum || {}).mast === '연습 필요').length; return h('div', { class: 'stat-row' }, h('div', null, h('b', null, n), '가입 학생'), h('div', null, h('b', null, avg + '%'), '평균 진도'), h('div', null, h('b', null, need), '연습 필요')); })(), h('div', { style: { display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '10px' } }, h('button', { class: 'btn btn-sm btn-ghost', onclick: async () => { for (const r of rows) await Cloud.update('data/' + r.rk + '/flags', { unlock: true }).catch(() => { }); toast('모든 학생의 차시 잠금을 풀었어요.'); App.teacher(); } }, '🔓 학급 전체 차시 열기'), h('button', { class: 'btn btn-sm btn-ghost', onclick: async () => { for (const r of rows) await Cloud.update('data/' + r.rk + '/flags', { unlock: false }).catch(() => { }); toast('순서대로 진행하도록 되돌렸어요.'); App.teacher(); } }, '🔒 순서대로 진행'), h('button', { class: 'btn btn-sm btn-ghost', onclick: () => { App.asStudent = true; App.dash(); } }, '👀 학습 콘텐츠 둘러보기')))));
+      h('div', { class: 'panel' }, h('h3', null, '📊 학급 한눈에'), (() => { const n = rows.length, avg = n ? Math.round(rows.reduce((a, r) => a + ((r.d.sum || {}).pct || 0), 0) / n) : 0, need = rows.filter(r => (r.d.sum || {}).mast === '연습 필요').length; return h('div', { class: 'stat-row' }, h('div', null, h('b', null, n), '가입 학생'), h('div', null, h('b', null, avg + '%'), '평균 진도'), h('div', null, h('b', null, need), '연습 필요')); })(), h('div', { style: { display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '10px' } }, h('button', { class: 'btn btn-sm btn-ghost', onclick: async () => { for (const r of rows) await Cloud.update('data/' + r.rk + '/flags', { unlock: true }).catch(() => { }); toast('모든 학생의 차시 잠금을 풀었어요.'); App.teacher(); } }, '🔓 학급 전체 차시 열기'), h('button', { class: 'btn btn-sm btn-ghost', onclick: async () => { for (const r of rows) await Cloud.update('data/' + r.rk + '/flags', { unlock: false }).catch(() => { }); toast('순서대로 진행하도록 되돌렸어요.'); App.teacher(); } }, '🔒 순서대로 진행'), h('button', { class: 'btn btn-sm btn-ghost', onclick: () => { App.asStudent = true; App.hub(); } }, '👀 학습 콘텐츠 둘러보기')))));
     const tb = h('table', { class: 'stu-table', id: 'stu-table' }, h('thead', null, h('tr', null, h('th', null, h('input', { type: 'checkbox', id: 'chk-all', title: '모두 선택', onchange: e => { $$('.stu-chk', tb).forEach(c => c.checked = e.target.checked); updSel(); } })), ...['학생 (아이디)', '현재 레벨', '완료 작품', '학습 진도', '숙련도', '최근 학습', '상태', '관리'].map(x => h('th', null, x)))));
     const selBtn = h('button', { class: 'btn btn-gold', id: 'btn-grant', disabled: true, onclick: () => Teacher.grantModal(rows.filter(r => { const c = tb.querySelector(`.stu-chk[data-rk="${r.rk}"]`); return c && c.checked; })) }, '⏩ 선택한 학생 진도 맞춰 주기');
     const updSel = () => { const n = $$('.stu-chk', tb).filter(c => c.checked).length; selBtn.disabled = !n; selBtn.textContent = n ? `⏩ 선택한 학생 ${n}명 진도 맞춰 주기` : '⏩ 선택한 학생 진도 맞춰 주기'; };
